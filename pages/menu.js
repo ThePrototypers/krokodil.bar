@@ -27,17 +27,18 @@ export async function getStaticProps() {
 export default function Menu({ foodsByCategories }) {
   return (
     <Layout>
-      <div className="space-y-5">
+      <div className="space-y-5 max-w-xl mx-auto">
         {foodsByCategories &&
           Object.entries(foodsByCategories).map(([categoryName, foods]) => {
             return (
               <div>
-                <div className="text-xl text-bold">{categoryName}</div>
+                <div className="text-5xl uppercase text-yellow-700 text-center font-bold">{categoryName}</div>
 
                 {categoryName === 'Wein' ? handleWein(foods) :
                   foods.map(food =>
-                    <div className="flex">
-                      {food.title}
+                    <div className="grid grid-cols-2 font-semibold">
+                      <div>{food.title}</div>
+                      <div className="text-right">{food.price1}</div>
                     </div>
                   )
                 }
@@ -54,29 +55,31 @@ export default function Menu({ foodsByCategories }) {
 const handleWein = (foods) => {
   return (
     <div className="flex flex-col space-y-5">
-      <div>
-        {handleWinePrices("Rotwein", foods.filter(f => f.subcategory === 'Rotwein'))}
-      </div>
+      {handleWinePrices("Rotwein", foods.filter(f => f.subcategory === 'Rotwein'))}
 
-      <div>
-        {handleWinePrices("Weißwein", foods.filter(f => f.subcategory === 'Weißwein'))}
-      </div>
+      {handleWinePrices("Weißwein", foods.filter(f => f.subcategory === 'Weißwein'))}
     </div>
   )
 }
 
 const handleWinePrices = (title, wines) => {
   return (
-    <div>
-      <div>{title}</div>
-      <div className="flex space-x-2">
-        <div>0,2</div>
-        <div>0,5</div>
-        <div>0,7</div>
-      </div>
-      <div className="flex flex-col">
-        {wines.map(w => <span>{w.title}</span>)}
-      </div>
+    <div class="mt-5 grid grid-cols-5 gap-3">
+      <div className="col-span-2 text-xl uppercase text-yellow-700 font-bold">{title}</div>
+      <div className="text-lg font-semibold text-yellow-700 text-center">0.2L</div>
+      <div className="text-lg font-semibold text-yellow-700 text-center">0.5L</div>
+      <div className="text-lg font-semibold text-yellow-700 text-center">0.7L</div>
+
+      {wines.map(w => {
+        return (
+          <>
+            <div className="col-span-2 font-semibold">{w.title}</div>
+            <div className="text-center font-semibold">{w.price1}</div>
+            <div className="text-center font-semibold">{w.price2}</div>
+            <div className="text-center font-semibold">{w.price3}</div>
+          </>
+        )
+      })}
     </div>
   )
 }
