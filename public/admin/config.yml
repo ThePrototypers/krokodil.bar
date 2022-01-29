@@ -9,8 +9,6 @@ collections:
     folder: "content/news"
     create: true
     slug: "{{slug}}"
-    editor:
-      preview: false
     fields:
       - { label: "Title", name: "title", widget: "string", required: true }
       - {
@@ -25,6 +23,8 @@ collections:
     folder: "content/food"
     slug: "{{slug}}"
     create: true
+    editor:
+      preview: false
     fields:
       - { label: "Titel", name: "title", widget: "string", required: true }
       - { label: "Superskript", name: "superscript", widget: "string", required: false }
