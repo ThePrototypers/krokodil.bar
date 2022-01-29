@@ -20,10 +20,10 @@ export default function News({ posts }) {
         {
           posts.map((post) => {
             return (
-              <div className="prose">
+              <div key={post.title} className="prose">
                 <h1 className="text-xl font-bold">{post.attributes.title}</h1>
 
-                <div class>
+                <div>
                   <div dangerouslySetInnerHTML={{ __html: post.html }} />
                 </div>
               </div>

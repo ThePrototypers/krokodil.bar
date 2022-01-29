@@ -31,14 +31,14 @@ export default function Menu({ foodsByCategories }) {
         {foodsByCategories &&
           Object.entries(foodsByCategories).map(([categoryName, foods]) => {
             return (
-              <div>
+              <div key={categoryName}>
                 <div className="text-5xl uppercase text-yellow-700 text-center font-bold">{categoryName}</div>
 
                 {categoryName === 'Wein' ? handleWein(foods) :
                   categoryName === 'Fassbier' ? handleBeer(foods) :
                     categoryName === 'Digestif' ? handleDigestif(foods) :
                       foods.map(food =>
-                        <div className="grid grid-cols-2">
+                        <div key={food.title} className="grid grid-cols-2">
                           <div className="font-semibold uppercase">
                             <div>{food.title}
                               <sup className="pl-1">{food.superscript}</sup>
@@ -94,11 +94,11 @@ const handleDigestif = (foods) => {
 
           {foods.filter(food => food.subcategory === 'shot').map(w => {
             return (
-              <>
+              <div key={w.title}>
                 <div className="col-span-2 font-semibold uppercase">{w.title}</div>
                 <div className="text-right">{w.price1}</div>
                 <div className="text-right">{w.price2}</div>
-              </>
+              </div>
             )
           })}
         </div>
@@ -128,12 +128,12 @@ const handleBeer = (foods) => {
 
         {foods.map(w => {
           return (
-            <>
+            <div key={w.title}>
               <div className="col-span-2 font-semibold uppercase">{w.title}</div>
               <div className="text-right">{w.price1}</div>
               <div className="text-right">{w.price2}</div>
               <div className="text-right">{w.price3}</div>
-            </>
+            </div>
           )
         })}
       </div>
@@ -172,7 +172,7 @@ const handleWinePrices = (title, wines) => {
 
       {wines.map(w => {
         return (
-          <>
+          <div key={w.title}>
             <div className="col-span-2 font-semibold uppercase">
               {w.title}
               <sup className="pl-1">{w.superscript}</sup>
@@ -180,7 +180,7 @@ const handleWinePrices = (title, wines) => {
             <div className="text-right">{w.price1}</div>
             <div className="text-right">{w.price2}</div>
             <div className="text-right">{w.price3}</div>
-          </>
+          </div>
         )
       })}
     </div>
