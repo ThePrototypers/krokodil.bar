@@ -1,0 +1,41 @@
+backend:
+  name: test-repo
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: public/img
+public_folder: img
+collections:
+  - label: "News"
+    name: "news"
+    folder: "content/news"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - {
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime",
+          required: true,
+        }
+      - { label: "Body", name: "body", widget: "markdown", required: true }
+  - label: "Food"
+    name: "food"
+    folder: "content/food"
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - { label: "Titel", name: "title", widget: "string", required: true }
+      - { label: "Superskript", name: "superscript", widget: "string", required: false }
+      - { 
+          label: "Kategorie",
+          name: "category",
+          widget: "select",
+          options: ["Fassbier", "Wein", "Aperitif", "Spritz", "Gin Tonic", "Cocktails", "Digestif", "Alkoholfrei"],
+          default: "Fassbier",
+          required: true
+        }
+      - { label: "Unterkategorie", name: "subcategory", widget: "string", required: false }
+      - { label: "Beschreibung", name: "description", widget: "string", required: false }
+      - { label: "Preis 1", name: "price1", widget: "number", required: true }
+      - { label: "Preis 2", name: "price2", widget: "number", required: false }
+      - { label: "Preis 3", name: "price3", widget: "number", required: false }
