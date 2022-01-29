@@ -1,5 +1,5 @@
 ---
 title: Testprodukt abc
 category: Fassbier
-price1: 1
+price1: 1,4
 ---
