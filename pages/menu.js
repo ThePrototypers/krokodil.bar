@@ -1,3 +1,4 @@
+import React from 'react';
 import importFood from "utils/food";
 
 import Layout from 'pages/components/layout.js'
@@ -94,11 +95,11 @@ const handleDigestif = (foods) => {
 
           {foods.filter(food => food.subcategory === 'shot').map(w => {
             return (
-              <div key={w.title}>
+              <React.Fragment key={w.title}>
                 <div className="col-span-2 font-semibold uppercase">{w.title}</div>
                 <div className="text-right">{w.price1}</div>
                 <div className="text-right">{w.price2}</div>
-              </div>
+              </React.Fragment>
             )
           })}
         </div>
@@ -128,12 +129,12 @@ const handleBeer = (foods) => {
 
         {foods.map(w => {
           return (
-            <div key={w.title}>
+            <React.Fragment key={w.title}>
               <div className="col-span-2 font-semibold uppercase">{w.title}</div>
               <div className="text-right">{w.price1}</div>
               <div className="text-right">{w.price2}</div>
               <div className="text-right">{w.price3}</div>
-            </div>
+            </React.Fragment>
           )
         })}
       </div>
@@ -172,7 +173,7 @@ const handleWinePrices = (title, wines) => {
 
       {wines.map(w => {
         return (
-          <div key={w.title}>
+          <React.Fragment key={w.title}>
             <div className="col-span-2 font-semibold uppercase">
               {w.title}
               <sup className="pl-1">{w.superscript}</sup>
@@ -180,7 +181,7 @@ const handleWinePrices = (title, wines) => {
             <div className="text-right">{w.price1}</div>
             <div className="text-right">{w.price2}</div>
             <div className="text-right">{w.price3}</div>
-          </div>
+          </React.Fragment>
         )
       })}
     </div>
