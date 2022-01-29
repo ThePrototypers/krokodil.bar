@@ -9,6 +9,8 @@ collections:
     folder: "content/news"
     create: true
     slug: "{{slug}}"
+    editor:
+      preview: false
     fields:
       - { label: "Title", name: "title", widget: "string", required: true }
       - {
@@ -36,6 +38,6 @@ collections:
         }
       - { label: "Unterkategorie", name: "subcategory", widget: "string", required: false }
       - { label: "Beschreibung", name: "description", widget: "string", required: false }
-      - { label: "Preis 1", name: "price1", widget: "number", required: true }
-      - { label: "Preis 2", name: "price2", widget: "number", required: false }
-      - { label: "Preis 3", name: "price3", widget: "number", required: false }
+      - { label: "Preis 1", name: "price1", widget: "string", required: true }
+      - { label: "Preis 2", name: "price2", widget: "string", required: false }
+      - { label: "Preis 3", name: "price3", widget: "string", required: false }
