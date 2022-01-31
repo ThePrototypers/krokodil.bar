@@ -147,7 +147,7 @@ const handleWein = (foods) => {
     <div className="flex flex-col space-y-5">
       {handleWinePrices("Rotwein", foods.filter(f => f.subcategory === 'Rotwein'))}
 
-      {handleWinePrices("Weißwein", foods.filter(f => f.subcategory === 'Weisswein/Rose'))}
+      {handleWinePrices("Weißwein/Rose", foods.filter(f => f.subcategory === 'Weisswein/Rose'))}
 
       {handleWinePrices("Schaumwein", foods.filter(f => f.subcategory === 'Schaumwein'))}
     </div>
