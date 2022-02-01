@@ -17,20 +17,35 @@ export async function getStaticProps() {
 
     foodsByCategories[food.attributes.category].push(food.attributes);
   })
-
+ 
   return {
     props: {
-      foodsByCategories
+	  foodsByCategories
     },
   };
 }
 
+function compare( a, b ) {
+  // define the order once and sort according to index in order array
+  const order = ["Fassbier", "Wein", "Aperitif", "Spritz", "Gin Tonic", "Cocktails", "Digestif", "Alkoholfrei"]
+  let x = order.indexOf(a[0]);
+  let y = order.indexOf(b[0]);
+  if ( x < y ){
+    return -1;
+  }
+  if ( x > y ){
+    return 1;
+  }
+  return 0;
+}
+
 export default function Menu({ foodsByCategories }) {
+  console.log(Object.entries(foodsByCategories).sort( compare ));
   return (
     <Layout>
       <div className="space-y-5 max-w-xl mx-auto">
         {foodsByCategories &&
-          Object.entries(foodsByCategories).map(([categoryName, foods]) => {
+          Object.entries(foodsByCategories).sort(compare).map(([categoryName, foods]) => {
             return (
               <div key={categoryName}>
                 <div className="text-5xl uppercase text-yellow-700 text-center font-bold">{categoryName}</div>
@@ -38,7 +53,7 @@ export default function Menu({ foodsByCategories }) {
                 {categoryName === 'Wein' ? handleWein(foods) :
                   categoryName === 'Fassbier' ? handleBeer(foods) :
                     categoryName === 'Digestif' ? handleDigestif(foods) :
-                      foods.map(food =>
+                      foods.sort().map(food =>
                         <div key={food.title} className="grid grid-cols-2">
                           <div className="font-semibold uppercase">
                             <div>{food.title}
@@ -66,7 +81,7 @@ export default function Menu({ foodsByCategories }) {
 const handleDigestif = (foods) => {
   return (
     <div>
-      {foods.filter(food => food.subcategory !== 'shot').map(food => {
+      {foods.filter(food => food.subcategory !== 'shot').sort().map(food => {
         return (
           <div key={food.title} className="grid grid-cols-2">
             <div className="font-semibold uppercase">
@@ -93,7 +108,7 @@ const handleDigestif = (foods) => {
             <div>4CL</div>
           </div>
 
-          {foods.filter(food => food.subcategory === 'shot').map(w => {
+          {foods.filter(food => food.subcategory === 'shot').sort().map(w => {
             return (
               <React.Fragment key={w.title}>
                 <div className="col-span-2 font-semibold uppercase">{w.title}</div>
@@ -127,7 +142,7 @@ const handleBeer = (foods) => {
           <div>1,5L</div>
         </div>
 
-        {foods.map(w => {
+        {foods.sort().map(w => {
           return (
             <React.Fragment key={w.title}>
               <div className="col-span-2 font-semibold uppercase">{w.title}</div>
