@@ -40,7 +40,6 @@ function compare( a, b ) {
 }
 
 export default function Menu({ foodsByCategories }) {
-  console.log(Object.entries(foodsByCategories).sort( compare ));
   return (
     <Layout>
       <div className="space-y-5 max-w-xl mx-auto">
