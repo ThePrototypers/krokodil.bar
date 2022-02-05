@@ -20,7 +20,6 @@ export default function Document() {
           crossOrigin="anonymous"
         />
         <title>Krokodil Bar</title>
-        <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
       </Head>
       <body className="bg-cover bg-fixed" style={{ backgroundImage: "url('/img/bg.jpeg')" }}>
         <Main />
