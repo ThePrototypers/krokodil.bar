@@ -1,4 +1,5 @@
 import { countPosts, importAllPosts } from "utils/news";
+import { format } from 'date-fns'
 
 import Layout from 'pages/components/layout.js'
 
@@ -16,15 +17,19 @@ export async function getStaticProps() {
 export default function News({ posts }) {
   return (
     <Layout>
-      <div className="space-y-20">
+      <h1 className="text-center font-yanone uppercase text-krokodil-yellow text-4xl mt-8 desktop:mt-28 desktop:text-7xl">Aktuelles</h1>
+      <div className="space-y-20 mt-8 desktop:mt-14">
         {
           posts.map((post) => {
             return (
-              <div key={post.title} className="prose">
-                <h1 className="text-xl font-bold">{post.attributes.title}</h1>
-
+              <div key={post.title} className="bg-white p-8 desktop:p-16 desktop:rounded-3xl">
                 <div>
-                  <div dangerouslySetInnerHTML={{ __html: post.html }} />
+                  <h5 className="text-krokodil-yellow font-yanone desktop:text-2xl">{post.attributes.date}</h5>
+                  <h3 className="uppercase text-krokodil-yellow font-yanone desktop:mt-[6px] desktop:text-4xl">{post.attributes.title}</h3>
+
+                  <div className="prose">
+                    <div dangerouslySetInnerHTML={{ __html: post.html }} />
+                  </div>
                 </div>
               </div>
             )

@@ -18,7 +18,6 @@ export default function Document() {
           type="font/ttf"
           crossOrigin="anonymous"
         />
-        <title>Krokodil Bar</title>
       </Head>
       <body className="bg-cover bg-fixed" style={{ backgroundImage: "url('/img/bg.jpeg')" }}>
         <Main />
