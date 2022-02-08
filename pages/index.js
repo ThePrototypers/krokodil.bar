@@ -27,7 +27,7 @@ export default function Home() {
         <Link href="/menu"><a href="#" className="s1 hover:text-krokodil-yellow-dark">Karte</a></Link>
         <Link href="/impressions"><a href="#" className="s1 hover:text-krokodil-yellow-dark">Impressionen</a></Link>
         <Link href="/contact"><a href="#" className="s1 hover:text-krokodil-yellow-dark">Kontakt</a></Link>
-        <Link href="/covid-tracing"><a href="#" className="s1 hover:text-krokodil-yellow-dark">Covid Tracing</a></Link>
+        <a href="https://rcvr.app//checkin?a=2c62ce2f-d341-47cf-8797-56934042bd79&k=%2BepHMqvLQngY49DWujSpEQz2rf2z4s%2BdA%2FR8Dv%2BJyxY%3D" className="s1 hover:text-krokodil-yellow-dark">Covid Tracing</a>
       </div>
 
     </Layout>
