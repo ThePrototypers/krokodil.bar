@@ -6,20 +6,20 @@ export default function Document() {
       <Head>
         <link
           rel="preload"
-          href="/fonts/Rubik-VariableFont_wght.ttf"
+          href="/fonts/Rubik-VariableFont_wght.woff2"
           as="font"
-          type="font/ttf"
+          type="font/woff2"
           crossOrigin="anonymous"
         />
         <link
           rel="preload"
-          href="/fonts/YanoneKaffeesatz-VariableFont_wght.ttf"
+          href="/fonts/YanoneKaffeesatz-VariableFont_wght.woff2"
           as="font"
-          type="font/ttf"
+          type="font/woff2"
           crossOrigin="anonymous"
         />
       </Head>
-      <body className="bg-cover bg-fixed" style={{ backgroundImage: "url('/img/bg.jpeg')" }}>
+      <body className="bg-cover bg-fixed bg-center" style={{ backgroundImage: "url('/img/bg.jpeg')" }}>
         <Main />
         <NextScript />
       </body>
