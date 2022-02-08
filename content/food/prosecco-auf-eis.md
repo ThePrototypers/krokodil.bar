@@ -5,6 +5,6 @@ category: Wein
 subcategory: Schaumwein
 description: 0.2L
 price1: "5,0"
-price2: ""
-price3: ""
+price2: "--"
+price3: "--"
 ---
