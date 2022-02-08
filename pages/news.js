@@ -17,7 +17,7 @@ export async function getStaticProps() {
 export default function News({ posts }) {
   return (
     <Layout>
-      <h1 className="text-center font-yanone font-semibold uppercase text-krokodil-yellow text-4xl mt-8 desktop:mt-28 desktop:text-7xl">Aktuelles</h1>
+      <h1 className="text-center uppercase mt-8 s1 desktop:mt-28">Aktuelles</h1>
       <div className="space-y-20 mt-8 desktop:mt-14">
         {
           posts.map((post) => {
@@ -31,7 +31,7 @@ export default function News({ posts }) {
                   <h5 className="text-krokodil-yellow-dark font-yanone font-semibold desktop:text-2xl">{
                     format(parseISO(post.attributes.date), 'd.MM.y')
                   }</h5>
-                  <h3 className="uppercase text-krokodil-yellow-dark font-yanone font-semibold desktop:mt-[6px] desktop:text-4xl">{post.attributes.title}</h3>
+                  <h3 className="uppercase s3 text-krokodil-yellow-dark desktop:mt-[6px]">{post.attributes.title}</h3>
 
                   <div className="prose-lg">
                     <div dangerouslySetInnerHTML={{ __html: post.html }} />

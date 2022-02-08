@@ -21,3 +21,22 @@ sub { bottom: -0.25em; vertical-align: sub;}
       src: url(/fonts/Rubik-VariableFont_wght.woff2) format("woff2");
     }
 }
+
+@layer components {
+    .s1 {
+        @apply font-yanone font-semibold text-krokodil-yellow tracking-[0.02em];
+        @apply text-[50px] leading-[45px];                          /* mobile */
+        @apply desktop:text-[110px] desktop:leading-[95px];         /* desktop */
+    }
+
+    .s2 {
+        @apply font-yanone text-krokodil-yellow tracking-[0.00em];
+        @apply text-[40px] leading-[35px];                          /* mobile */
+        @apply desktop:text-[65px] desktop:leading-[58px];          /* desktop */
+    }
+
+    .s3 {
+        @apply font-yanone font-semibold text-krokodil-yellow tracking-[0.01em];
+        @apply text-[50px] leading-[45px];                          /* mobile & desktop */
+    }
+}
