@@ -5,8 +5,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
       <Component {...pageProps} />
+      <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
+      <Script src="https://cdn.usefathom.com/script.js" data-site="DNCTHVAD" defer></Script>
     </>
   )
 }
