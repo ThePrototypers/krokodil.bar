@@ -20,7 +20,7 @@ export default function Layout({ children }) {
         <Link href="/"><a><Image src={logo} alt="Krokodil Bar Logo"></Image></a></Link>
       </div>
 
-      <div className="max-w-full pb-10 desktop:max-w-screen-desktop mx-auto font-rubik">
+      <div className="max-w-full desktop:max-w-screen-desktop mx-auto font-rubik">
         {children}
       </div>
     </>

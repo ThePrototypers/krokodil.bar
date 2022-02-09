@@ -19,7 +19,7 @@ export default function News({ posts }) {
     <Layout>
 
       <h1 className="text-center uppercase mt-8 s1 desktop:mt-28">Aktuelles</h1>
-      <div className="space-y-20 mt-8 desktop:mt-14">
+      <div className="space-y-20 mt-8 mb-10 desktop:mt-14">
         {
           posts.map((post) => {
             return (
