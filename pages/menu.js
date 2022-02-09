@@ -42,14 +42,14 @@ function compare( a, b ) {
 export default function Menu({ foodsByCategories }) {
   return (
     <Layout>
-      <h1 className="text-center font-yanone uppercase text-krokodil-yellow text-4xl mt-8 desktop:mt-28 desktop:text-7xl">Karte</h1>
+      <h1 className="text-center uppercase mt-8 s1 desktop:mt-28">Karte</h1>
       <div className="space-y-20 mt-8 desktop:mt-14">
-        <div className="bg-white p-3 desktop:p-16 desktop:rounded-3xl desktop:space-y-12" style={{ backgroundImage: "url('/img/tile.png')"}}>
+        <div className="bg-white p-3 desktop:p-16 desktop:rounded-3xl desktop:space-y-8" style={{ backgroundImage: "url('/img/tile.png')"}}>
 			{foodsByCategories &&
 			  Object.entries(foodsByCategories).sort(compare).map(([categoryName, foods]) => {
 				return (
 				  <div key={categoryName} className="mt-12 desktop:mt-0">
-					<div className="uppercase flex justify-center text-krokodil-yellow font-yanone desktop:mt-[6px] desktop:text-[65px] text-[40px]">{categoryName}</div>
+					<div className="uppercase flex justify-center s2 desktop:mt-[6px]">{categoryName}</div>
 
 					{categoryName === 'Wein' ? handleWein(foods) :
 					  categoryName === 'Fassbier' ? handleBeer(foods) :
@@ -60,7 +60,7 @@ export default function Menu({ foodsByCategories }) {
 								<div>{food.title}
 								  <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">{food.superscript}</sup>
 								</div>
-								<div className="font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">{food.description}</div>
+								<div className="-mt-2 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">{food.description}</div>
 							  </div>
 							  <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">{food.price1}</div>
 							</div>
@@ -84,11 +84,11 @@ const handleDigestif = (foods) => {
       {foods.filter(food => food.subcategory !== 'shot').sort().map(food => {
         return (
           <div key={food.title} className="grid grid-cols-2">
-            <div className="font-medium font-yanone uppercase font-yanone desktop:text-[30px] text-[19px]">
+            <div className="font-yanone uppercase font-yanone desktop:text-[30px] text-[19px]">
               <div>{food.title}
                 <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">{food.superscript}</sup>
               </div>
-              <div className="text-sm text-teal-700 uppercase">{food.description}</div>
+              <div className="font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">{food.description}</div>
             </div>
             <div className="text-right font-light font-yanone desktop:text-[26px] text-[16px]">{food.price1}</div>
           </div>
@@ -158,7 +158,7 @@ const handleBeer = (foods) => {
 
 const handleWein = (foods) => {
   return (
-    <div className="flex flex-col space-y-12">
+    <div className="flex flex-col space-y-8">
       {handleWinePrices("Rotwein", foods.filter(f => f.subcategory === 'Rotwein'))}
 
       {handleWinePrices("Weißwein/Rose", foods.filter(f => f.subcategory === 'Weisswein/Rose'))}
@@ -171,7 +171,7 @@ const handleWein = (foods) => {
 const handleWinePrices = (title, wines) => {
   return (
     <div className="mt-5 grid grid-cols-5">
-      <div className="col-span-2 text-krokodil-yellow uppercase font-yanone desktop:text-3xl text-lg">{title}</div>
+      <div className="mt-6 col-span-2 text-krokodil-yellow uppercase font-yanone desktop:text-3xl text-lg">{title}</div>
       <div className="text-krokodil-yellow text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
         <div>Glas</div>
         <div>0,2L</div>
