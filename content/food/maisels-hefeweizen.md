@@ -6,5 +6,5 @@ subcategory: ""
 description: 
 price1: "2,8"
 price2: "4,5"
-price3: ""
+price3: "--"
 ---

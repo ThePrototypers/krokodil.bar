@@ -44,11 +44,11 @@ export default function Menu({ foodsByCategories }) {
     <Layout>
       <h1 className="text-center font-yanone uppercase text-krokodil-yellow text-4xl mt-8 desktop:mt-28 desktop:text-7xl">Karte</h1>
       <div className="space-y-20 mt-8 desktop:mt-14">
-        <div className="bg-white desktop:p-16 desktop:rounded-3xl space-y-12">
+        <div className="bg-white p-3 desktop:p-16 desktop:rounded-3xl desktop:space-y-12" style={{ backgroundImage: "url('/img/tile.png')"}}>
 			{foodsByCategories &&
 			  Object.entries(foodsByCategories).sort(compare).map(([categoryName, foods]) => {
 				return (
-				  <div key={categoryName} className="">
+				  <div key={categoryName} className="mt-12 desktop:mt-0">
 					<div className="uppercase flex justify-center text-krokodil-yellow font-yanone desktop:mt-[6px] desktop:text-[65px] text-[40px]">{categoryName}</div>
 
 					{categoryName === 'Wein' ? handleWein(foods) :
