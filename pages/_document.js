@@ -8,14 +8,24 @@ export default function Document() {
           rel="preload"
           href="/fonts/Rubik-VariableFont_wght.woff2"
           as="font"
-          type="font/woff2"
           crossOrigin="anonymous"
         />
         <link
           rel="preload"
-          href="/fonts/YanoneKaffeesatz-VariableFont_wght.woff2"
+          href="/fonts/YanoneKaffeesatz-Light.ttf"
           as="font"
-          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/YanoneKaffeesatz-Medium.ttf"
+          as="font"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/YanoneKaffeesatz-SemiBold.ttf"
+          as="font"
           crossOrigin="anonymous"
         />
       </Head>

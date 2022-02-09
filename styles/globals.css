@@ -10,15 +10,25 @@ sub { bottom: -0.25em; vertical-align: sub;}
     @font-face {
       font-family: "Yanone Kaffeesatz";
       font-style: normal;
+      font-weight: 500;
       font-display: optional;
-      src: url(/fonts/YanoneKaffeesatz-VariableFont_wght.woff2) format("woff2");
+      src: url(/fonts/YanoneKaffeesatz-Medium.ttf) format("truetype");
     }
 
     @font-face {
-      font-family: "Rubik";
-      font-style: normal;
+      font-family: "Yanone Kaffeesatz";
+      font-style: light;
+      font-weight: 300;
       font-display: optional;
-      src: url(/fonts/Rubik-VariableFont_wght.woff2) format("woff2");
+      src: url(/fonts/YanoneKaffeesatz-Light.ttf) format("truetype");
+    }
+
+    @font-face {
+      font-family: "Yanone Kaffeesatz";
+      font-style: semibold;
+      font-weight: 600;
+      font-display: optional;
+      src: url(/fonts/YanoneKaffeesatz-SemiBold.ttf) format("truetype");
     }
 }
 
