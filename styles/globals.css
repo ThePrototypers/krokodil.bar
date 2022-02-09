@@ -17,7 +17,7 @@ sub { bottom: -0.25em; vertical-align: sub;}
 
     @font-face {
       font-family: "Yanone Kaffeesatz";
-      font-style: light;
+      font-style: normal;
       font-weight: 300;
       font-display: optional;
       src: url(/fonts/YanoneKaffeesatz-Light.ttf) format("truetype");
@@ -25,7 +25,7 @@ sub { bottom: -0.25em; vertical-align: sub;}
 
     @font-face {
       font-family: "Yanone Kaffeesatz";
-      font-style: semibold;
+      font-style: bold;
       font-weight: 600;
       font-display: optional;
       src: url(/fonts/YanoneKaffeesatz-SemiBold.ttf) format("truetype");
