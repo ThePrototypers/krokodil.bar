@@ -17,7 +17,7 @@ collections:
           widget: "datetime",
           required: true,
         }
-      - { label: "Body", name: "body", widget: "markdown", required: true }
+      - { label: "Body", name: "body", widget: "markdown", required: true, buttons: ['bold', 'link', 'bulleted-list', 'numbered-list'] }
   - label: "Food"
     name: "food"
     folder: "content/food"

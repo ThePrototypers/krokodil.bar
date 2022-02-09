@@ -11,7 +11,7 @@ export default function Impressions() {
           style={{ backgroundImage: "url('/img/tile.png')" }}
         >
           <div className="text-center font-rubik desktop:flex-row">
-            <h3 class="s3 uppercase text-krokodil-yellow-dark">Zum Krokodil</h3>
+            <h3 className="s3 uppercase text-krokodil-yellow-dark">Zum Krokodil</h3>
             <div className="mt-5 font-bold">
               <div>Weserstrasse 19, 12045 Berlin</div>
               <div>Tel: 030-38720706</div>
@@ -27,7 +27,7 @@ export default function Impressions() {
           style={{ backgroundImage: "url('/img/tile.png')" }}
         >
           <div className="text-center font-rubik desktop:flex-row space-y-10">
-            <h3 class="s3 uppercase text-krokodil-yellow-dark">Impressum</h3>
+            <h3 className="s3 uppercase text-krokodil-yellow-dark">Impressum</h3>
             <p>
               Tillmans & Zielke Gbr.<br />
               Weser Straße 19<br />

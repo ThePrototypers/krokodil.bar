@@ -36,7 +36,8 @@ sub { bottom: -0.25em; vertical-align: sub;}
     }
 
     .s3 {
-        @apply font-yanone font-semibold text-krokodil-yellow tracking-[0.01em];
-        @apply text-[50px] leading-[45px];                          /* mobile & desktop */
+        @apply font-yanone text-krokodil-yellow tracking-[0.01em];
+        @apply text-[26px] leading-[24px] font-medium;                          /* mobile & desktop */
+        @apply desktop:text-[50px] desktop:leading-[45px] font-semibold;                          /* mobile & desktop */
     }
 }
