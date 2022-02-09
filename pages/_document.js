@@ -6,25 +6,19 @@ export default function Document() {
       <Head>
         <link
           rel="preload"
-          href="/fonts/Rubik-VariableFont_wght.woff2"
+          href="/fonts/YanoneKaffeesatz-Light.woff2"
           as="font"
           crossOrigin="anonymous"
         />
         <link
           rel="preload"
-          href="/fonts/YanoneKaffeesatz-Light.ttf"
+          href="/fonts/YanoneKaffeesatz-Medium.woff2"
           as="font"
           crossOrigin="anonymous"
         />
         <link
           rel="preload"
-          href="/fonts/YanoneKaffeesatz-Medium.ttf"
-          as="font"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/YanoneKaffeesatz-SemiBold.ttf"
+          href="/fonts/YanoneKaffeesatz-SemiBold.woff2"
           as="font"
           crossOrigin="anonymous"
         />

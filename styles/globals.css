@@ -12,7 +12,7 @@ sub { bottom: -0.25em; vertical-align: sub;}
       font-style: normal;
       font-weight: 500;
       font-display: optional;
-      src: url(/fonts/YanoneKaffeesatz-Medium.ttf) format("truetype");
+      src: url(/fonts/YanoneKaffeesatz-Medium.woff2) format("woff2");
     }
 
     @font-face {
@@ -20,7 +20,7 @@ sub { bottom: -0.25em; vertical-align: sub;}
       font-style: normal;
       font-weight: 300;
       font-display: optional;
-      src: url(/fonts/YanoneKaffeesatz-Light.ttf) format("truetype");
+      src: url(/fonts/YanoneKaffeesatz-Light.woff2) format("woff2");
     }
 
     @font-face {
@@ -28,7 +28,7 @@ sub { bottom: -0.25em; vertical-align: sub;}
       font-style: bold;
       font-weight: 600;
       font-display: optional;
-      src: url(/fonts/YanoneKaffeesatz-SemiBold.ttf) format("truetype");
+      src: url(/fonts/YanoneKaffeesatz-SemiBold.woff2) format("woff2");
     }
 }
 
