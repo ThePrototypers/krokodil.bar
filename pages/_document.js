@@ -35,7 +35,7 @@ export default function Document() {
           crossOrigin="anonymous"
         />
       </Head>
-      <body className="bg-cover bg-fixed bg-center" style={{ backgroundImage: "url('/img/bg.jpeg')" }}>
+      <body className="bg-cover bg-fixed desktop:bg-center" style={{ backgroundImage: "url('/img/bg.jpeg')" }}>
         <Main />
         <NextScript />
       </body>

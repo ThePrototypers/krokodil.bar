@@ -25,7 +25,7 @@ export default function News({ posts }) {
             return (
               <div
                 key={post.title}
-                className="bg-white px-2 py-8 desktop:py-16 desktop:px-16 desktop:rounded-3xl bg-repeat"
+                className="bg-white py-11 px-2 desktop:p-16 desktop:rounded-3xl bg-repeat"
                 style={{ backgroundImage: "url('/img/tile.png')", backgroundSize: "60%" }}
               >
                 <div>
