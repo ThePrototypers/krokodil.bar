@@ -17,23 +17,23 @@ export async function getStaticProps() {
 
     foodsByCategories[food.attributes.category].push(food.attributes);
   })
- 
+
   return {
     props: {
-	  foodsByCategories
+      foodsByCategories
     },
   };
 }
 
-function compare( a, b ) {
+function compare(a, b) {
   // define the order once and sort according to index in order array
   const order = ["Fassbier", "Wein", "Aperitif", "Spritz", "Gin Tonic", "Cocktails", "Digestif", "Alkoholfrei"]
   let x = order.indexOf(a[0]);
   let y = order.indexOf(b[0]);
-  if ( x < y ){
+  if (x < y) {
     return -1;
   }
-  if ( x > y ){
+  if (x > y) {
     return 1;
   }
   return 0;
@@ -44,34 +44,34 @@ export default function Menu({ foodsByCategories }) {
     <Layout>
       <h1 className="text-center uppercase mt-8 s1 desktop:mt-28">Karte</h1>
       <div className="space-y-20 mt-8 desktop:mt-14">
-        <div className="bg-white p-3 desktop:p-16 desktop:rounded-3xl desktop:space-y-8" style={{ backgroundImage: "url('/img/tile.png')"}}>
-			{foodsByCategories &&
-			  Object.entries(foodsByCategories).sort(compare).map(([categoryName, foods]) => {
-				return (
-				  <div key={categoryName} className="mt-12 desktop:mt-0">
-					<div className="uppercase flex justify-center s2 desktop:mt-[6px]">{categoryName}</div>
+        <div className="bg-white p-3 desktop:p-16 desktop:rounded-3xl desktop:space-y-8" style={{ backgroundImage: "url('/img/tile.png')" }}>
+          {foodsByCategories &&
+            Object.entries(foodsByCategories).sort(compare).map(([categoryName, foods]) => {
+              return (
+                <div key={categoryName} className="mt-12 desktop:mt-0">
+                  <div className="uppercase flex justify-center s2 desktop:mt-[6px]">{categoryName}</div>
 
-					{categoryName === 'Wein' ? handleWein(foods) :
-					  categoryName === 'Fassbier' ? handleBeer(foods) :
-						categoryName === 'Digestif' ? handleDigestif(foods) :
-						  foods.sort().map(food =>
-							<div key={food.title} className="grid grid-cols-2">
-							  <div className="font-medium font-yanone uppercase font-yanone desktop:text-[30px] text-[19px]">
-								<div>{food.title}
-								  <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">{food.superscript}</sup>
-								</div>
-								<div className="-mt-2 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">{food.description}</div>
-							  </div>
-							  <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">{food.price1}</div>
-							</div>
-						  )
-					}
+                  {categoryName === 'Wein' ? handleWein(foods) :
+                    categoryName === 'Fassbier' ? handleBeer(foods) :
+                      categoryName === 'Digestif' ? handleDigestif(foods) :
+                        foods.sort().map(food =>
+                          <div key={food.title} className="grid grid-cols-2">
+                            <div className="font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
+                              <div>{food.title}
+                                <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">{food.superscript}</sup>
+                              </div>
+                              <div className="-mt-2 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">{food.description}</div>
+                            </div>
+                            <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">{food.price1}</div>
+                          </div>
+                        )
+                  }
 
-				  </div>
-				)
-			  })
-			}
-	  	</div>
+                </div>
+              )
+            })
+          }
+        </div>
         <div className="uppercase flex justify-center text-krokodil-yellow font-yanone desktop:mt-[6px] desktop:text-[65px] text-[40px]">... und vieles mehr</div>
       </div>
     </Layout >

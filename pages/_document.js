@@ -2,6 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
+    // <Html className="bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('/img/bg.jpeg')" }}>
     <Html>
       <Head>
         <link
@@ -35,7 +36,7 @@ export default function Document() {
           crossOrigin="anonymous"
         />
       </Head>
-      <body className="bg-cover bg-fixed desktop:bg-center" style={{ backgroundImage: "url('/img/bg.jpeg')" }}>
+      <body>
         <Main />
         <NextScript />
       </body>
