@@ -30,6 +30,24 @@ sub { bottom: -0.25em; vertical-align: sub;}
   src: url(/fonts/YanoneKaffeesatz-SemiBold.woff) format("woff");
 }
 
+@font-face {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-display: optional;
+  src: url(/fonts/Rubik-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-display: optional;
+  font-weight: 500;
+  src: url(/fonts/Rubik-Medium.woff) format("woff");
+}
+
+body {
+    @apply font-rubik;
+}
+
 @layer components {
     .s1 {
         @apply font-yanone font-semibold text-krokodil-yellow tracking-[0.02em];
@@ -45,7 +63,7 @@ sub { bottom: -0.25em; vertical-align: sub;}
 
     .s3 {
         @apply font-yanone text-krokodil-yellow tracking-[0.01em];
-        @apply text-[26px] leading-[24px] font-medium;                          /* mobile & desktop */
+        @apply text-[40px] leading-[35px] font-medium;                          /* mobile & desktop */
         @apply desktop:text-[50px] desktop:leading-[45px] font-semibold;                          /* mobile & desktop */
     }
 }
