@@ -1,9 +1,10 @@
 import Layout from 'pages/components/layout.js'
+import Headline from 'pages/components/headline'
 
 export default function Impressions() {
   return (
     <Layout>
-      <h1 className="text-center uppercase mt-8 s1 desktop:mt-28">Kontakt</h1>
+      <Headline title="Kontakt" />
 
       <div className="pt-11 mb-10 desktop:mt-14">
         <div

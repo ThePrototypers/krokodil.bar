@@ -2,6 +2,7 @@ import React from 'react';
 import importFood from "utils/food";
 
 import Layout from 'pages/components/layout.js'
+import Headline from 'pages/components/headline'
 
 export async function getStaticProps() {
   const foods = await importFood();
@@ -42,7 +43,7 @@ function compare(a, b) {
 export default function Menu({ foodsByCategories }) {
   return (
     <Layout>
-      <h1 className="text-center uppercase mt-8 s1 desktop:mt-28">Karte</h1>
+      <Headline title="Karte" />
       <div className="space-y-20 mt-8 desktop:mt-14">
         <div className="bg-white p-3 desktop:p-16 desktop:rounded-3xl" style={{ backgroundImage: "url('/img/tile.png')" }}>
           {foodsByCategories &&
