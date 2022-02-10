@@ -22,6 +22,18 @@ export default function Document() {
           as="font"
           crossOrigin="anonymous"
         />
+        <link
+          rel="preload"
+          href="/fonts/Rubik-Regular.woff"
+          as="font"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/Rubik-Medium.woff"
+          as="font"
+          crossOrigin="anonymous"
+        />
       </Head>
       <body className="bg-cover bg-fixed bg-center" style={{ backgroundImage: "url('/img/bg.jpeg')" }}>
         <Main />

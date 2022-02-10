@@ -22,7 +22,7 @@ module.exports = {
       lg: ['26px', { lineHeight: '26px', letterSpacing: '0em' }], // H7 Desktop
       lg2: ['26px', { lineHeight: '24px', letterSpacing: '0em' }], // H4 Mobil
       xl: ['30px', { lineHeight: '27px', letterSpacing: '0.01em' }], // H6 Desktop
-      '2xl': ['30px', { lineHeight: '30px', letterSpacing: '0.01em' }], // H5 Desktop
+      '2xl': ['26px', { lineHeight: '24px', letterSpacing: '0.01em' }], // H5 Desktop
       '3xl': ['40px', { lineHeight: '35px', letterSpacing: '0em' }], // H2 Mobil
       '4xl': ['50px', { lineHeight: '45px', letterSpacing: '0.01em' }], // H3
       '6xl': ['65px', { lineHeight: '58px', letterSpacing: '0em' }], // H2 Desktop
