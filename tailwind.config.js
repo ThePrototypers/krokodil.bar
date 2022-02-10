@@ -29,8 +29,8 @@ module.exports = {
       '7xl': ['110px', { lineHeight: '95px', letterSpacing: '0.02em' }], // H1 Desktop
     },
     fontFamily: {
-      yanone: "'Yanone Kaffeesatz', sans-serif",
-      rubik: 'Rubik, sans-serif'
+      yanone: ['Yanone Kaffeesatz', 'sans-serif'],
+      rubik: ['Rubik', 'sans-serif']
     },
     extend: {},
 

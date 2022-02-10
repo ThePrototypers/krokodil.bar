@@ -6,19 +6,19 @@ export default function Document() {
       <Head>
         <link
           rel="preload"
-          href="/fonts/YanoneKaffeesatz-Light.woff2"
+          href="/fonts/YanoneKaffeesatz-Light.woff"
           as="font"
           crossOrigin="anonymous"
         />
         <link
           rel="preload"
-          href="/fonts/YanoneKaffeesatz-Medium.woff2"
+          href="/fonts/YanoneKaffeesatz-Medium.woff"
           as="font"
           crossOrigin="anonymous"
         />
         <link
           rel="preload"
-          href="/fonts/YanoneKaffeesatz-SemiBold.woff2"
+          href="/fonts/YanoneKaffeesatz-SemiBold.woff"
           as="font"
           crossOrigin="anonymous"
         />
