@@ -48,8 +48,8 @@ export default function Menu({ foodsByCategories }) {
           {foodsByCategories &&
             Object.entries(foodsByCategories).sort(compare).map(([categoryName, foods]) => {
               return (
-                <div key={categoryName} className="mt-12 desktop:mt-0">
-                  <div className="uppercase text-[#C58116] flex justify-center s2 desktop:mt-[6px]">{categoryName}</div>
+                <div key={categoryName} className="mt-12">
+                  <div className="uppercase text-krokodil-yellow-dark flex justify-center s2">{categoryName}</div>
 
                   {categoryName === 'Wein' ? handleWein(foods) :
                     categoryName === 'Fassbier' ? handleBeer(foods) :
@@ -72,7 +72,7 @@ export default function Menu({ foodsByCategories }) {
             })
           }
         </div>
-        <div className="uppercase flex justify-center text-[#C58116] font-yanone desktop:mt-[6px] desktop:text-[65px] text-[40px]">... und vieles mehr</div>
+        <div className="uppercase flex justify-center text-krokodil-yellow font-yanone desktop:mt-[6px] desktop:text-[65px] text-[40px]">... und vieles mehr</div>
       </div>
     </Layout >
   )
@@ -83,7 +83,7 @@ const handleDigestif = (foods) => {
     <div>
       {foods.filter(food => food.subcategory !== 'shot').sort().map(food => {
         return (
-          <div key={food.title} className="grid grid-cols-2">
+          <div key={food.title} className="grid grid-cols-2 mt-2">
             <div className="font-yanone uppercase desktop:text-[30px] text-[19px]">
               <div>{food.title}
                 <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">{food.superscript}</sup>
@@ -99,11 +99,11 @@ const handleDigestif = (foods) => {
       <div className="flex flex-col">
         <div className="grid grid-cols-4">
           <div className="col-span-2 text-xl uppercase font-bold"></div>
-          <div className="text-[#C58116] text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+          <div className="text-krokodil-yellow-dark text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
             <div></div>
             <div>2CL</div>
           </div>
-          <div className="text-[#C58116] text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+          <div className="text-krokodil-yellow-dark text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
             <div></div>
             <div>4CL</div>
           </div>
@@ -126,18 +126,18 @@ const handleDigestif = (foods) => {
 
 const handleBeer = (foods) => {
   return (
-    <div className="flex flex-col space-y-8">
+    <div className="flex flex-col mt-2">
       <div className="mt-5 grid grid-cols-5">
         <div className="col-span-2 text-xl uppercase text-yellow-700 font-bold"></div>
-        <div className="text-[#C58116] text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+        <div className="text-krokodil-yellow-dark text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
           <div></div>
           <div>0,3L</div>
         </div>
-        <div className="text-[#C58116] text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+        <div className="text-krokodil-yellow-dark text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
           <div></div>
           <div>0,4L</div>
         </div>
-        <div className="text-[#C58116] text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+        <div className="text-krokodil-yellow-dark text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
           <div>1,5L</div>
         </div>
 
@@ -158,7 +158,7 @@ const handleBeer = (foods) => {
 
 const handleWein = (foods) => {
   return (
-    <div className="flex flex-col space-y-8">
+    <div className="flex flex-col mt-2">
       {handleWinePrices("Rotwein", foods.filter(f => f.subcategory === 'Rotwein'))}
 
       {handleWinePrices("Weißwein/Rose", foods.filter(f => f.subcategory === 'Weisswein/Rose'))}
@@ -170,17 +170,17 @@ const handleWein = (foods) => {
 
 const handleWinePrices = (title, wines) => {
   return (
-    <div className="mt-5 grid grid-cols-5">
-      <div className="mt-3 col-span-2 text-[#C58116] uppercase font-yanone desktop:text-3xl text-lg">{title}</div>
-      <div className="text-[#C58116] leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+    <div className="mt-6 grid grid-cols-5">
+      <div className="mt-3 col-span-2 text-krokodil-yellow-dark uppercase font-yanone desktop:text-3xl text-lg">{title}</div>
+      <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
         <div>Glas</div>
         <div>0,2L</div>
       </div>
-      <div className="text-[#C58116] leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+      <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
         <div>Karaffe</div>
         <div>0,5L</div>
       </div>
-      <div className="text-[#C58116] leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+      <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
         <div>Flasche</div>
         <div>0,7L/1L</div>
       </div>
