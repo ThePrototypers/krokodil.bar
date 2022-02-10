@@ -83,7 +83,7 @@ const handleDigestif = (foods) => {
     <div>
       {foods.filter(food => food.subcategory !== 'shot').sort().map(food => {
         return (
-          <div key={food.title} className="grid grid-cols-2 space-y-8">
+          <div key={food.title} className="grid grid-cols-2">
             <div className="font-yanone uppercase desktop:text-[30px] text-[19px]">
               <div>{food.title}
                 <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">{food.superscript}</sup>
@@ -97,8 +97,8 @@ const handleDigestif = (foods) => {
 
 
       <div className="flex flex-col">
-        <div className="mt-5 grid grid-cols-4">
-          <div className="col-span-2 text-xl uppercase text-yellow-700 font-bold"></div>
+        <div className="grid grid-cols-4">
+          <div className="col-span-2 text-xl uppercase font-bold"></div>
           <div className="text-[#C58116] text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
             <div></div>
             <div>2CL</div>
