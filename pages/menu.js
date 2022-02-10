@@ -44,7 +44,7 @@ export default function Menu({ foodsByCategories }) {
     <Layout>
       <h1 className="text-center uppercase mt-8 s1 desktop:mt-28">Karte</h1>
       <div className="space-y-20 mt-8 desktop:mt-14">
-        <div className="bg-white p-3 desktop:p-16 desktop:rounded-3xl space-y-12 desktop:space-y-8" style={{ backgroundImage: "url('/img/tile.png')" }}>
+        <div className="bg-white p-3 desktop:p-16 desktop:rounded-3xl" style={{ backgroundImage: "url('/img/tile.png')" }}>
           {foodsByCategories &&
             Object.entries(foodsByCategories).sort(compare).map(([categoryName, foods]) => {
               return (
@@ -56,13 +56,13 @@ export default function Menu({ foodsByCategories }) {
                       categoryName === 'Digestif' ? handleDigestif(foods) :
                         foods.sort().map(food =>
                           <div key={food.title} className="grid grid-cols-2">
-                            <div className="font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
+                            <div className="mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
                               <div>{food.title}
                                 <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">{food.superscript}</sup>
                               </div>
                               <div className="-mt-[0.25em] font-medium uppercase leading-[1em] desktop:text-[20px] text-[16px] text-[#8B8B8B]">{food.description}</div>
                             </div>
-                            <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">{food.price1}</div>
+                            <div className="mt-2 text-right font-yanone font-light desktop:text-[26px] text-[16px]">{food.price1}</div>
                           </div>
                         )
                   }
@@ -97,7 +97,7 @@ const handleDigestif = (foods) => {
 
 
       <div className="flex flex-col">
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-4 mt-2">
           <div className="col-span-2 text-xl uppercase font-bold"></div>
           <div className="text-krokodil-yellow-dark text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
             <div></div>
