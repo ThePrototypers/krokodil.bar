@@ -49,7 +49,7 @@ export default function Menu({ foodsByCategories }) {
       <Headline title="Karte" />
       <div className="space-y-20 mt-8 desktop:mt-14">
         <div className="bg-white p-3 desktop:p-16 desktop:rounded-3xl" style={{ backgroundImage: "url('/img/tile.png')" }}>
-	      <div className="mt-4 space-y-12">
+	      <div className="mt-8 desktop:mt-0 space-y-12">
           {foodsByCategories &&
             Object.entries(foodsByCategories).sort(compare).map(([categoryName, foods]) => {
               return (
