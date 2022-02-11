@@ -9,7 +9,7 @@ export default function Impressions() {
       <div className="pt-11 mb-10 desktop:mt-14">
         <div
           className="bg-white py-11 px-2 desktop:p-16 desktop:rounded-3xl bg-repeat"
-          style={{ backgroundImage: "url('/img/tile.png')" }}
+          style={{ backgroundImage: "url('/img/tile.png')", backgroundSize: "60%" }}
         >
           <div className="text-center desktop:flex-row">
             <h3 className="s3 uppercase text-krokodil-yellow-dark">Zum Krokodil</h3>
@@ -23,8 +23,8 @@ export default function Impressions() {
       </div>
 
       <div
-        className="bg-white py-11 desktop:p-16 desktop:rounded-3xl bg-repeat"
-        style={{ backgroundImage: "url('/img/tile.png')" }}
+        className="bg-white mb-10 py-11 desktop:p-16 desktop:rounded-3xl bg-repeat"
+        style={{ backgroundImage: "url('/img/tile.png')", backgroundSize: "60%" }}
       >
         <div className="text-center desktop:flex-row space-y-10">
           <h3 className="s3 uppercase text-krokodil-yellow-dark">Impressum</h3>
