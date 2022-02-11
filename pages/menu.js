@@ -49,10 +49,11 @@ export default function Menu({ foodsByCategories }) {
       <Headline title="Karte" />
       <div className="space-y-20 mt-8 desktop:mt-14">
         <div className="bg-white p-3 desktop:p-16 desktop:rounded-3xl" style={{ backgroundImage: "url('/img/tile.png')" }}>
+	      <div className="mt-4 space-y-12">
           {foodsByCategories &&
             Object.entries(foodsByCategories).sort(compare).map(([categoryName, foods]) => {
               return (
-                <div key={categoryName} className="mt-12">
+                <div key={categoryName}>
 				  <Disclosure defaultOpen={ categoryName == 'Fassbier' ? true : false }>
 				    {({ open }) => (
 				    <>
@@ -61,7 +62,7 @@ export default function Menu({ foodsByCategories }) {
 						<div className="flex uppercase uppercase text-krokodil-yellow-dark s2">
 						  <span>{categoryName}</span>
 				          <ChevronRightIcon
-              			    className={`${open ? "transform -rotate-90" : ""} transform rotate-90 h-14`}
+              			    className={`${open ? "transform -rotate-90" : ""} transform rotate-90 h-7 desktop:h-14`}
             		      />
 						</div>
       			    </Disclosure.Button>
@@ -90,6 +91,7 @@ export default function Menu({ foodsByCategories }) {
               )
             })
           }
+	      </div>
         </div>
         <div className="uppercase flex justify-center text-krokodil-yellow font-yanone desktop:mt-[6px] desktop:text-[65px] text-[40px]">... und vieles mehr</div>
       </div>
