@@ -48,50 +48,50 @@ export default function Menu({ foodsByCategories }) {
     <Layout>
       <Headline title="Karte" />
       <div className="space-y-20 mt-8 desktop:mt-14">
-        <div className="bg-white p-3 desktop:p-16 desktop:rounded-3xl" style={{ backgroundImage: "url('/img/tile.png')" }}>
-	      <div className="mt-8 desktop:mt-0 space-y-12">
-          {foodsByCategories &&
-            Object.entries(foodsByCategories).sort(compare).map(([categoryName, foods]) => {
-              return (
-                <div key={categoryName}>
-				  <Disclosure defaultOpen={ categoryName == 'Fassbier' ? true : false }>
-				    {({ open }) => (
-				    <>
-					<div className="flex justify-center">
-				    <Disclosure.Button>
-						<div className="flex uppercase uppercase text-krokodil-yellow-dark s2">
-						  <span>{categoryName}</span>
-				          <ChevronRightIcon
-              			    className={`${open ? "rotate-[90deg]" : "rotate-[270deg]"} h-7 desktop:h-14`}
-            		      />
-						</div>
-      			    </Disclosure.Button>
-					</div>
-      			    <Disclosure.Panel>
-                      {categoryName === 'Wein' ? handleWein(foods) :
-                        categoryName === 'Fassbier' ? handleBeer(foods) :
-                          categoryName === 'Digestif' ? handleDigestif(foods) :
-                            foods.sort().map(food =>
-                              <div key={food.title} className="grid grid-cols-2">
-                                <div className="mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                                  <div>{food.title}
-                                    <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">{food.superscript}</sup>
-                                  </div>
-                                  <div className="-mt-[0.25em] font-medium uppercase leading-[1em] desktop:text-[20px] text-[16px] text-[#8B8B8B]">{food.description}</div>
-                                </div>
-                                <div className="mt-2 text-right font-yanone font-light desktop:text-[26px] text-[16px]">{food.price1}</div>
+        <div className="bg-white p-3 desktop:p-16 desktop:rounded-3xl" style={{ backgroundImage: "url('/img/tile.png')", backgroundSize: "60%" }}>
+          <div className="mt-8 desktop:mt-0 space-y-12">
+            {foodsByCategories &&
+              Object.entries(foodsByCategories).sort(compare).map(([categoryName, foods]) => {
+                return (
+                  <div key={categoryName}>
+                    <Disclosure defaultOpen={categoryName == 'Fassbier' ? true : false}>
+                      {({ open }) => (
+                        <>
+                          <div className="flex justify-center">
+                            <Disclosure.Button>
+                              <div className="flex uppercase uppercase text-krokodil-yellow-dark s2">
+                                <span>{categoryName}</span>
+                                <ChevronRightIcon
+                                  className={`${open ? "rotate-[90deg]" : "rotate-[270deg]"} h-7 desktop:h-14`}
+                                />
                               </div>
-                            )
-                      }
-				      </Disclosure.Panel>
-				    </>
-					)}
-				  </Disclosure>
-                </div>
-              )
-            })
-          }
-	      </div>
+                            </Disclosure.Button>
+                          </div>
+                          <Disclosure.Panel>
+                            {categoryName === 'Wein' ? handleWein(foods) :
+                              categoryName === 'Fassbier' ? handleBeer(foods) :
+                                categoryName === 'Digestif' ? handleDigestif(foods) :
+                                  foods.sort().map(food =>
+                                    <div key={food.title} className="grid grid-cols-2">
+                                      <div className="mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
+                                        <div>{food.title}
+                                          <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">{food.superscript}</sup>
+                                        </div>
+                                        <div className="-mt-[0.25em] font-medium uppercase leading-[1em] desktop:text-[20px] text-[16px] text-[#8B8B8B]">{food.description}</div>
+                                      </div>
+                                      <div className="mt-2 text-right font-yanone font-light desktop:text-[26px] text-[16px]">{food.price1}</div>
+                                    </div>
+                                  )
+                            }
+                          </Disclosure.Panel>
+                        </>
+                      )}
+                    </Disclosure>
+                  </div>
+                )
+              })
+            }
+          </div>
         </div>
         <div className="uppercase flex justify-center text-krokodil-yellow font-yanone desktop:mt-[6px] desktop:text-[65px] text-[40px]">... und vieles mehr</div>
       </div>

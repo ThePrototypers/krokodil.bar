@@ -11,12 +11,12 @@ export default function Home() {
     <Layout>
 
       <div className="fixed bottom-12 w-full justify-center align-middle flex desktop:hidden">
-        <div><Image src={fb} alt="Krokodil Bar auf Facebook"></Image></div>
-        <div className="ml-12"><Image src={ig} alt="Krokodil Bar auf Instagram"></Image></div>
-        <div className="ml-12"><Image src={spotify} alt="Krokodil Bar auf Spotify"></Image></div>
+        <div><a href="https://www.facebook.com/zumkrokodil/"><Image src={fb} alt="Krokodil Bar auf Facebook"></Image></a></div>
+        <div className="ml-12"><a href="https://www.instagram.com/zum_krokodil/"><Image src={ig} alt="Krokodil Bar auf Instagram"></Image></a></div>
+        <div className="ml-12"><a href="https://open.spotify.com/user/kngmhvd1po58va6m0do92b8up?si=VcT0wOZ0Q_-mzohfhFQivw"><Image src={spotify} alt="Krokodil Bar auf Spotify"></Image></a></div>
       </div>
 
-      <div className="flex h-screen">
+      <div className="flex h-screen pb-28 desktop:pb-0">
         <div className="m-auto">
           <div className="flex flex-col uppercase text-center space-y-4 desktop:space-y-6">
             <Link href="/news"><a className="s1 hover:text-krokodil-yellow-dark">Aktuelles</a></Link>
