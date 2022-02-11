@@ -62,7 +62,7 @@ export default function Menu({ foodsByCategories }) {
 						<div className="flex uppercase uppercase text-krokodil-yellow-dark s2">
 						  <span>{categoryName}</span>
 				          <ChevronRightIcon
-              			    className={`${open ? "transform -rotate-90" : ""} transform rotate-90 h-7 desktop:h-14`}
+              			    className={`${open ? "rotate-[270deg]" : ""} rotate-90 h-7 desktop:h-14`}
             		      />
 						</div>
       			    </Disclosure.Button>
