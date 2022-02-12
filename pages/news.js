@@ -28,7 +28,7 @@ export default function News({ posts }) {
               <div
                 key={idx}
                 className="bg-white py-11 px-2 desktop:p-16 desktop:rounded-3xl bg-repeat"
-                style={{ backgroundImage: "url('/img/tile.png')", backgroundSize: "60%" }}
+                style={{ backgroundImage: "url('/img/tile.png')", backgroundSize: "25%" }}
               >
                 <div>
                   <h5 className="text-krokodil-yellow-dark font-yanone font-semibold text-base2 desktop:text-2xl">{
