@@ -17,7 +17,7 @@ export default function Layout({ children }) {
       localStorage.setItem('logoShown', true);
       setInterval(() => {
         setShowNav(true)
-      }, 2000)
+      }, 4000)
     } else {
       setShowNav(true)
     }
@@ -31,7 +31,7 @@ export default function Layout({ children }) {
       {!showNav &&
         <div className="flex h-screen">
           <div className="m-auto">
-            <Link href="/"><a><Image src={logo} alt="Krokodil Bar Logo"></Image></a></Link>
+            <a onClick={() => setShowNav(true)}><Image src={logo} alt="Krokodil Bar Logo"></Image></a>
           </div>
         </div>
       }
