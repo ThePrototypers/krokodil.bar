@@ -191,7 +191,7 @@ const handleWein = (foods) => {
 
 const handleWinePrices = (title, wines) => {
   return (
-    <div className="mt-6 grid grid-cols-5">
+    <div className="mt-6 grid grid-cols-5 space-y-2">
       <div className="mt-3 col-span-2 text-krokodil-yellow-dark uppercase font-yanone desktop:text-3xl text-lg">{title}</div>
       <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
         <div>Glas</div>
@@ -209,7 +209,7 @@ const handleWinePrices = (title, wines) => {
       {wines.map(w => {
         return (
           <React.Fragment key={w.title}>
-            <div className="col-span-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
+            <div className="col-span-2 leading-[1.15em] font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
               {w.title}
               <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">{w.superscript}</sup>
             </div>
