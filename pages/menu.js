@@ -79,7 +79,7 @@ export default function Menu({ foodsByCategories }) {
                                         </div>
                                         <div className={`${food.description == "" ? '' : 'mb-1'} -mt-[0.25em] font-medium uppercase leading-[1em] desktop:text-[20px] text-[16px] text-[#8B8B8B]`}>{food.description}</div>
                                       </div>
-                                      <div className="mt-2 text-right font-yanone font-light desktop:text-[26px] text-[16px]">{food.price1}</div>
+                                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">{food.price1}</div>
                                     </div>
                                   )
                             }
