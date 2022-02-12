@@ -48,7 +48,7 @@ export default function Menu({ foodsByCategories }) {
     <Layout>
       <Headline title="Karte" />
       <div className="space-y-20 mt-8 desktop:mt-14">
-        <div className="bg-white p-3 desktop:p-16 desktop:rounded-3xl" style={{ backgroundImage: "url('/img/tile.png')", backgroundSize: "60%" }}>
+        <div className="bg-white p-3 desktop:p-16 desktop:rounded-3xl" style={{ backgroundImage: "url('/img/tile.png')", backgroundSize: "25%" }}>
           <div className="mt-8 desktop:mt-0 space-y-12">
             {foodsByCategories &&
               Object.entries(foodsByCategories).sort(compare).map(([categoryName, foods]) => {
