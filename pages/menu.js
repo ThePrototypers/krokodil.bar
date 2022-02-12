@@ -104,8 +104,8 @@ const handleDigestif = (foods) => {
     <div>
       {foods.filter(food => food.subcategory !== 'shot').sort().map(food => {
         return (
-          <div key={food.title} className="grid grid-cols-2 mt-2">
-            <div className="font-yanone uppercase desktop:text-[30px] text-[19px]">
+          <div key={food.title} className="grid grid-cols-4 mt-2">
+            <div className="col-span-3 font-yanone uppercase desktop:text-[30px] text-[19px]">
               <div>{food.title}
                 <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">{food.superscript}</sup>
               </div>
