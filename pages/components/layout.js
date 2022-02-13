@@ -27,7 +27,6 @@ export default function Layout({ children }) {
   return (
     <>
 
-
       {!showNav &&
         <div className="flex h-screen">
           <div className="m-auto">
