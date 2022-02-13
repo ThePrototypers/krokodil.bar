@@ -1,5 +1,6 @@
 import Layout from 'pages/components/layout.js'
 import Headline from 'pages/components/headline'
+import Link from 'next/link'
 
 export default function Impressions() {
   return (
@@ -13,7 +14,7 @@ export default function Impressions() {
         >
           <div className="text-center desktop:flex-row">
             <h3 className="s3 uppercase text-krokodil-yellow-dark">Zum Krokodil</h3>
-            <div className="mt-5 font-rubik font-medium">
+            <div className="mt-5 font-rubik font-medium text-[20px]">
               <div>Weserstrasse 19, 12045 Berlin</div>
               <div>Tel: 030-38720706</div>
               <div><a href="mailto:schnapp@krokodil.bar">schnapp@krokodil.bar</a></div>
@@ -30,7 +31,7 @@ export default function Impressions() {
           <h3 className="s3 uppercase text-krokodil-yellow-dark">Impressum</h3>
           <p>
             Tillmans & Zielke Gbr.<br />
-            Weser Straße 19<br />
+            Weserstrasse 19<br />
             12045 Berlin<br />
           </p>
 
@@ -38,6 +39,13 @@ export default function Impressions() {
             Geschäfsführer: Marlon Zielke<br />
             Steuernummer: 16/605/01013<br />
             UsID: DE316930449<br />
+          </p>
+          <p>
+            Design & Umsetzung<br />
+            Prototypers Gbr.<br />
+            <Link href="https://theprototypers.de">
+            https://theprototypers.de
+            </Link>
           </p>
           <p>
             Datenschutzerklärung:<br />
