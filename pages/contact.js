@@ -1,5 +1,6 @@
 import Layout from 'pages/components/layout.js'
 import Headline from 'pages/components/headline'
+import Link from 'next/link'
 
 export default function Impressions() {
   return (
@@ -38,6 +39,13 @@ export default function Impressions() {
             Geschäfsführer: Marlon Zielke<br />
             Steuernummer: 16/605/01013<br />
             UsID: DE316930449<br />
+          </p>
+          <p>
+            Design & Umsetzung<br />
+            Prototypers GbR<br />
+            <Link href="https://theprototypers.de">
+            https://theprototypers.de
+            </Link>
           </p>
           <p>
             Datenschutzerklärung:<br />
