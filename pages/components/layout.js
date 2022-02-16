@@ -10,28 +10,34 @@ import spotify from '../../public/img/spotify.svg'
 export default function Layout({ children }) {
   const [showNav, setShowNav] = useState(false);
 
-  useEffect(() => {
-    const shown = localStorage.getItem('logoShown');
+  //   useEffect(() => {
+  //     const shown = localStorage.getItem('logoShown');
 
-    if (!shown) {
-      localStorage.setItem('logoShown', true);
-      setInterval(() => {
-        setShowNav(true)
-      }, 4000)
-    } else {
-      setShowNav(true)
-    }
+  //     if (!shown) {
+  //       localStorage.setItem('logoShown', true);
+  //       setInterval(() => {
+  //         setShowNav(true)
+  //       }, 4000)
+  //     } else {
+  //       setShowNav(true)
+  //     }
 
-  }, [])
+  //   }, [])
 
   return (
     <>
 
       {!showNav &&
         <div className="flex h-screen">
-          <div className="m-auto">
-            <a onClick={() => setShowNav(true)}><Image src={logo} alt="Krokodil Bar Logo"></Image></a>
+          <div className="m-auto cursor-pointer h-2/3">
+
+            <div className="w-screen h-full relative">
+              <a onClick={() => setShowNav(true)}>
+                <Image src={logo} alt="Krokodil Bar Logo" layout="fill" objectFit="contain" ></Image>
+              </a>
+            </div>
           </div>
+
         </div>
       }
 
