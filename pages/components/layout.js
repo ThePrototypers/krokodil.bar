@@ -28,8 +28,8 @@ export default function Layout({ children }) {
     <>
 
       {!showNav &&
-        <div className="flex h-screen">
-          <div className="m-auto cursor-pointer h-[60%]">
+        <div className="flex absolute inset-0">
+          <div className="m-auto cursor-pointer h-[50%] desktop:h-[60%]">
 
             <div className="w-screen h-full relative">
               <a onClick={() => setShowNav(true)}>
