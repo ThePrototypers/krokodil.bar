@@ -27,10 +27,10 @@ export default function Impressions() {
         className="bg-white mb-10 py-11 desktop:p-16 desktop:rounded-3xl bg-repeat"
         style={{ backgroundImage: "url('/img/tile.png')", backgroundSize: "25%" }}
       >
-        <div className="text-center desktop:flex-row space-y-10">
+        <div className="text-center desktop:flex-row space-y-10 text-[20px]">
           <h3 className="s3 uppercase text-krokodil-yellow-dark">Impressum</h3>
           <p>
-            Tillmans & Zielke Gbr.<br />
+            Tillmans & Zielke GbR<br />
             Weserstrasse 19<br />
             12045 Berlin<br />
           </p>
@@ -41,8 +41,8 @@ export default function Impressions() {
             UsID: DE316930449<br />
           </p>
           <p>
-            Design & Umsetzung<br />
-            Prototypers Gbr.<br />
+            Design & Umsetzung:<br />
+            Prototypers GbR<br />
             <Link href="https://theprototypers.de">
             https://theprototypers.de
             </Link>
