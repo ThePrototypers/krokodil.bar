@@ -9,16 +9,16 @@ sub { bottom: -0.25em; vertical-align: sub;}
 @font-face {
   font-family: "Yanone Kaffeesatz";
   font-display: swap;
+  font-weight: 200 600;
   src: url(/fonts/YanoneKaffeesatz-VariableFont_wght.woff2) format("woff2");
 }
 
-
-@font-face {
-  font-family: "Yanone Kaffeesatz";
-  font-display: swap;
-  src: url(/fonts/YanoneKaffeesatz-Light.woff2) format("woff2");
-  font-weight: 300;
-}
+/* @font-face { */
+/*   font-family: "Yanone Kaffeesatz"; */
+/*   font-display: swap; */
+/*   src: url(/fonts/YanoneKaffeesatz-Light.woff2) format("woff2"); */
+/*   font-weight: 300; */
+/* } */
 
 @font-face {
   font-family: "Rubik";
