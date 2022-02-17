@@ -9,6 +9,7 @@ export default function Document() {
           rel="preload"
           href="/fonts/YanoneKaffeesatz-VariableFont_wght.woff2"
           as="font"
+          type="font/woff2"
           crossOrigin="anonymous"
         />
         <link
