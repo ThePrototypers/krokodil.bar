@@ -14,6 +14,13 @@ export default function Document() {
         />
         <link
           rel="preload"
+          href="/fonts/YanoneKaffeesatz-Light.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
           href="/fonts/Rubik-VariableFont_wght.woff2"
           as="font"
           type="font/woff2"
