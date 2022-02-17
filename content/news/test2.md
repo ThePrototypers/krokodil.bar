@@ -1,6 +1,6 @@
 ---
 title: Drink des Monats // Drink of the Month
-date: 2020-11-10T17:46:20.439Z
+date: 2022-02-17T09:41:06.808Z
 ---
 Lorem **ipsum** dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
