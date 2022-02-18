@@ -34,6 +34,10 @@ body {
     line-height: 1.3em;
 }
 
+.prose-xl > div > p > img {
+    margin: 0 auto;
+}
+
 body:after{
       content:"";
       position:fixed; /* stretch a fixed position to the whole screen */

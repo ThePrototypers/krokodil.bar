@@ -36,7 +36,7 @@ export default function Impressions() {
           </p>
 
           <p>
-            Geschäfsführer: Marlon Zielke<br />
+            Geschäfsführer: Marlon Zielke, Sebastian Tillmans<br />
             Steuernummer: 16/605/01013<br />
             UsID: DE316930449<br />
           </p>
@@ -44,7 +44,7 @@ export default function Impressions() {
             Design & Umsetzung:<br />
             Prototypers GbR<br />
             <Link href="https://theprototypers.de">
-            https://theprototypers.de
+              https://theprototypers.de
             </Link>
           </p>
           <p>
