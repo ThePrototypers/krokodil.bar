@@ -28,6 +28,20 @@ export default function Impressions() {
         style={{ backgroundImage: "url('/img/tile.png')", backgroundSize: "25%" }}
       >
         <div className="text-center desktop:flex-row space-y-10 text-[20px]">
+          <h3 className="s3 uppercase text-krokodil-yellow-dark">Reservierungen</h3>
+
+
+          <p>
+            Reservierungen können <a className="border-b" href="https://app.resmio.com/zum-krokodil/widget">hier</a> direkt Online durchgeführt werden
+          </p>
+        </div>
+      </div>
+
+      <div
+        className="bg-white mb-10 py-11 desktop:p-16 desktop:rounded-3xl bg-repeat"
+        style={{ backgroundImage: "url('/img/tile.png')", backgroundSize: "25%" }}
+      >
+        <div className="text-center desktop:flex-row space-y-10 text-[20px]">
           <h3 className="s3 uppercase text-krokodil-yellow-dark">Impressum</h3>
           <p>
             Tillmans & Zielke GbR<br />
