@@ -1,6 +1,6 @@
 ---
-title: Afri Cola
+title: Pommes Frites
 category: Alkoholfrei
-subcategory: Limos
+subcategory: Warmes
 price1: 2,5
 ---

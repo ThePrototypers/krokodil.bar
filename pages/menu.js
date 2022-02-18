@@ -97,6 +97,8 @@ export default function Menu({ foodsByCategories }) {
                                 ? handleBeer(foods)
                                 : categoryName === "Digestif"
                                 ? handleDigestif(foods)
+                                : categoryName === "Alkoholfrei"
+                                ? handleSoda(foods)
                                 : foods.sort().map((food) => (
                                     <div
                                       key={food.title}
@@ -452,6 +454,65 @@ const handleWinePrices = (title, wines) => {
             </div>
             <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
               {w.price3}
+            </div>
+          </React.Fragment>
+        );
+      })}
+    </div>
+  );
+};
+
+const handleSoda = (foods) => {
+  return (
+    <div className="flex flex-col mt-2">
+      {handleSodaPrices(
+        "Cocktails",
+        foods.filter((f) => f.subcategory === "Cocktails")
+      )}
+
+      {handleSodaPrices(
+        "Limos",
+        foods.filter((f) => f.subcategory === "Limos")
+      )}
+
+      {handleSodaPrices(
+        "Warmes",
+        foods.filter((f) => f.subcategory === "Warmes")
+      )}
+    </div>
+  );
+};
+
+const handleSodaPrices = (title, sodas) => {
+  return (
+    <div className="mt-6 grid grid-cols-4 space-y-4">
+      <div className="mt-6 col-span-4 text-krokodil-yellow-dark uppercase font-yanone desktop:text-3xl text-lg">
+        {title}
+      </div>
+
+      {sodas.map((w) => {
+        return (
+          <React.Fragment key={w.title}>
+            <div
+              key={w.title}
+              className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]"
+            >
+              <div>
+                {w.title}
+                <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">
+                  {w.superscript}
+                </sup>
+              </div>
+              <div
+                className={`${
+                  w.description == "" ? "" : "mb-1"
+                } -mt-[0.25em] font-medium uppercase leading-[1em] desktop:text-[20px] text-[16px] text-[#8B8B8B]`}
+              >
+                {w.description}
+              </div>
+            </div>
+            <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
+              {w.price1}
             </div>
           </React.Fragment>
         );
