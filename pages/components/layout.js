@@ -49,11 +49,11 @@ export default function Layout({ children }) {
             <div><a href="https://open.spotify.com/user/kngmhvd1po58va6m0do92b8up?si=VcT0wOZ0Q_-mzohfhFQivw"><Image src={spotify} alt="Krokodil Bar auf Spotify"></Image></a></div>
           </div>
 
-          <div className="fixed top-[50px] left-[70px] desktop:absolute wide:fixed hidden desktop:block z-0">
+          <div className="hidden fixed desktop:block desktop:top-[17px] desktop:left-[17px] wide:top-[50px] wide:left-[70px]">
             <Link href="/"><a><Image src={logo} alt="Krokodil Bar Logo"></Image></a></Link>
           </div>
 
-          <div className="max-w-full desktop:max-w-screen-desktop mx-auto font-rubik z-50">
+          <div className="max-w-full desktop:max-w-screen-desktop mx-auto font-rubik">
             {children}
           </div>
         </>

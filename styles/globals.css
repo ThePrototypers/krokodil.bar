@@ -57,7 +57,8 @@ body:after{
     .s1 {
         @apply font-yanone font-semibold text-krokodil-yellow tracking-[0.02em];
         @apply text-[50px] leading-[45px];                          /* mobile */
-        @apply desktop:text-[110px] desktop:leading-[95px];         /* desktop */
+        @apply desktop:text-[75px] desktop:leading-[75px];         /* desktop */
+        @apply wide:text-[110px] wide:leading-[95px];         /* desktop */
     }
 
     .s2 {

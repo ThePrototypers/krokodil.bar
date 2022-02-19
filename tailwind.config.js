@@ -2,7 +2,8 @@ module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}",],
   theme: {
     screens: {
-      desktop: '850px'
+      desktop: '1200px',
+      wide: '1535px'
     },
     colors: {
       white: '#FFFFFF',
