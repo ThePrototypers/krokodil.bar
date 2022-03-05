@@ -382,7 +382,6 @@ const handleSodaPrices = (title, sodas) => {
 };
 
 function comparePrice(a, b) {
-  console.log(a);
   if (parseInt(a.price1) < parseInt(b.price1)) {
     return -1;
   }
