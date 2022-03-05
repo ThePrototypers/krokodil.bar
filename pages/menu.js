@@ -40,6 +40,7 @@ function compare(a, b) {
     "Cocktails",
     "Digestif",
     "Alkoholfrei",
+    "Zusatzstoffe",
   ];
   let x = order.indexOf(a[0]);
   let y = order.indexOf(b[0]);
@@ -78,14 +79,24 @@ export default function Menu({ foodsByCategories }) {
                           <>
                             <div className="flex justify-center">
                               <Disclosure.Button>
-                                <div className="flex uppercase uppercase text-krokodil-yellow-dark s2">
+                                <div
+                                  className={
+                                    categoryName == "Zusatzstoffe"
+                                      ? "flex uppercase font-yanone text-[#8B8B8B] text-[20px]"
+                                      : "flex uppercase text-krokodil-yellow-dark s2"
+                                  }
+                                >
                                   <span>{categoryName}</span>
                                   <ChevronRightIcon
                                     className={`${
                                       open
                                         ? "rotate-[90deg]"
                                         : "rotate-[270deg]"
-                                    } h-7 desktop:h-14`}
+                                    } ${
+                                      categoryName == "Zusatzstoffe"
+                                        ? "h-7 desktop:h-7"
+                                        : "h-7 desktop:h-14"
+                                    }  `}
                                   />
                                 </div>
                               </Disclosure.Button>
@@ -99,6 +110,8 @@ export default function Menu({ foodsByCategories }) {
                                 ? handleDigestif(foods)
                                 : categoryName === "Alkoholfrei"
                                 ? handleSoda(foods)
+                                : categoryName == "Zusatzstoffe"
+                                ? handleSupplement(foods)
                                 : foods.sort().map((food) => (
                                     <div
                                       key={food.title}
@@ -131,159 +144,6 @@ export default function Menu({ foodsByCategories }) {
                     </div>
                   );
                 })}
-            <Disclosure>
-              {({ open }) => (
-                <>
-                  <div className="flex justify-center">
-                    <Disclosure.Button>
-                      <div className="flex uppercase uppercase text-krokodil-yellow-dark s2">
-                        <span>Zusatzstoffe</span>
-                        <ChevronRightIcon
-                          className={`${
-                            open ? "rotate-[90deg]" : "rotate-[270deg]"
-                          } h-7 desktop:h-14`}
-                        />
-                      </div>
-                    </Disclosure.Button>
-                  </div>
-                  <Disclosure.Panel>
-                    <div className="grid grid-cols-4 space-y-4">
-                      <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                        <div>mit Konservierungsstoff</div>
-                      </div>
-                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-                        1
-                      </div>
-                      <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                        <div>mit Farbstoff</div>
-                      </div>
-                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-                        2
-                      </div>
-                      <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                        <div>mit Antioxidationsmittel</div>
-                      </div>
-                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-                        3
-                      </div>
-                      <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                        <div>mit Süßungsmittel Saccharin</div>
-                      </div>
-                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-                        4
-                      </div>
-                      <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                        <div>mit Süßungsmittel Cyclamat</div>
-                      </div>
-                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-                        5
-                      </div>
-                      <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                        <div>
-                          mit Süßungsmittel Aspartam, enth. Phenylalaninquelle
-                        </div>
-                      </div>
-                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-                        6
-                      </div>
-                      <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                        <div>mit Süßungsmittel Acesulfam</div>
-                      </div>
-                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-                        7
-                      </div>
-                      <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                        <div>mit Phosphat</div>
-                      </div>
-                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-                        8
-                      </div>
-                      <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                        <div>geschwefelt</div>
-                      </div>
-                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-                        9
-                      </div>
-                      <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                        <div>chininhaltig</div>
-                      </div>
-                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-                        10
-                      </div>
-                      <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                        <div>koffeinhaltig</div>
-                      </div>
-                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-                        11
-                      </div>
-                      <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                        <div>mit Geschmacksverstärker</div>
-                      </div>
-                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-                        12
-                      </div>
-                      <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                        <div>geschwärzt</div>
-                      </div>
-                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-                        13
-                      </div>
-                      <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                        <div>gewachst</div>
-                      </div>
-                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-                        14
-                      </div>
-                      <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                        <div>gentechnisch verändert</div>
-                      </div>
-                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-                        15
-                      </div>
-                      <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                        <div>
-                          glutenhaltiges Getreide (Weizen, Roggen, Gerste,
-                          Hafer, Dinkel, Kamut, Hybridstämme)
-                        </div>
-                      </div>
-                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-                        A
-                      </div>
-                      <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                        <div>
-                          Milch und Milchprodukte (einschließlich Laktose)
-                        </div>
-                      </div>
-                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-                        G
-                      </div>
-                      <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                        <div>
-                          Schalenfrüchte (Mandel, Haselnuss, Walnuss, Cashew,
-                          Pecannuss, Paranuss, Pistazie, Macadamianuss und
-                          Queenslandnuss)
-                        </div>
-                      </div>
-                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-                        H
-                      </div>
-                      <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                        <div>Senf</div>
-                      </div>
-                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-                        L
-                      </div>
-                      <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                        <div>Lupinen</div>
-                      </div>
-                      <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-                        M
-                      </div>
-                    </div>
-                  </Disclosure.Panel>
-                </>
-              )}
-            </Disclosure>
           </div>
         </div>
         <div className="uppercase flex justify-center text-krokodil-yellow font-yanone desktop:mt-[6px] desktop:text-[65px] text-[40px]">
@@ -517,6 +377,30 @@ const handleSodaPrices = (title, sodas) => {
           </React.Fragment>
         );
       })}
+    </div>
+  );
+};
+
+function comparePrice(a, b) {
+  console.log(a);
+  if (parseInt(a.price1) < parseInt(b.price1)) {
+    return -1;
+  }
+  if (parseInt(a.price1) > parseInt(b.price1)) {
+    return 1;
+  }
+  // a must be equal to b
+  return 0;
+}
+
+const handleSupplement = (foods) => {
+  return (
+    <div className="mt-4">
+      {foods.sort(comparePrice).map((food) => (
+        <span className="font-yanone font-normal p-1 uppercase text-[#8B8B8B] text-[20px] leading-[1em]">
+          {food.title}
+        </span>
+      ))}
     </div>
   );
 };
