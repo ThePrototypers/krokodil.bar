@@ -13,7 +13,7 @@ export default function Impressions() {
           <div className="desktop:p-2 mb-5">
             <img src="/img/gallery/Kroko_4.jpg" />
           </div>
-          <div className="desktop:p-2">
+          <div className="desktop:p-2 mb-5">
             <img src="/img/gallery/Kroko_Bar1.jpg" />
           </div>
         </div>
