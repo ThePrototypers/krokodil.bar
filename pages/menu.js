@@ -396,7 +396,7 @@ const handleSupplement = (foods) => {
   return (
     <div className="mt-4">
       {foods.sort(comparePrice).map((food) => (
-        <span className="font-yanone font-normal p-1 uppercase text-[#8B8B8B] text-[20px] leading-[1em]">
+        <span key={food.title} className="font-yanone font-normal p-1 uppercase text-[#8B8B8B] text-[20px] leading-[1em]">
           {food.title}
         </span>
       ))}
