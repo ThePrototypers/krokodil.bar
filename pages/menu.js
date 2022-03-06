@@ -82,7 +82,7 @@ export default function Menu({ foodsByCategories }) {
                                 <div
                                   className={
                                     categoryName == "Zusatzstoffe"
-                                      ? "flex uppercase font-yanone text-[#8B8B8B] text-[20px] mb-8"
+                                      ? "flex uppercase font-yanone text-[#8B8B8B] text-[20px] mb-8 desktop:mb-0"
                                       : "flex uppercase text-krokodil-yellow-dark s2"
                                   }
                                 >
