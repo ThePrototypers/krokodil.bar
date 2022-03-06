@@ -55,7 +55,7 @@ export default function Impressions() {
         </div>
       </div>
 
-      <h3 className="mt-24 s3 text-center uppercase text-krokodil-yellow-dark">
+      <h3 className="mt-20 desktop:mt-24 s3 text-center uppercase text-krokodil-yellow-dark">
         <Link href="/impress">Impressum</Link>
       </h3>
     </Layout>

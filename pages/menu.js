@@ -82,7 +82,7 @@ export default function Menu({ foodsByCategories }) {
                                 <div
                                   className={
                                     categoryName == "Zusatzstoffe"
-                                      ? "flex uppercase font-yanone text-[#8B8B8B] text-[20px]"
+                                      ? "flex uppercase font-yanone text-[#8B8B8B] text-[20px] mb-8"
                                       : "flex uppercase text-krokodil-yellow-dark s2"
                                   }
                                 >
@@ -396,7 +396,10 @@ const handleSupplement = (foods) => {
   return (
     <div className="mt-4">
       {foods.sort(comparePrice).map((food) => (
-        <span key={food.title} className="font-yanone font-normal p-1 uppercase text-[#8B8B8B] text-[20px] leading-[1em]">
+        <span
+          key={food.title}
+          className="font-yanone font-normal p-1 uppercase text-[#8B8B8B] text-[20px] leading-[1em]"
+        >
           {food.title}
         </span>
       ))}
