@@ -394,7 +394,7 @@ function comparePrice(a, b) {
 
 const handleSupplement = (foods) => {
   return (
-    <div className="mt-4">
+    <div className="mt-4 mb-4">
       {foods.sort(comparePrice).map((food) => (
         <span
           key={food.title}
