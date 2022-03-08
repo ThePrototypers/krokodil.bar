@@ -38,6 +38,10 @@ body {
     margin: 0 auto;
 }
 
+.prose-xl > div > ul {
+    list-style-type: disc;
+}
+
 body:after{
       content:"";
       position:fixed; /* stretch a fixed position to the whole screen */
