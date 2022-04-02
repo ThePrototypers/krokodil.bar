@@ -1,7 +1,7 @@
 ---
 title: Tanqueray Flor De Sevilla
 superscript: "1 3 10"
-category: Gin Tonic
+category: Longdrinks
 subcategory: ""
 description: ""
 price1: "7,5"

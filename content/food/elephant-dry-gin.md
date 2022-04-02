@@ -1,7 +1,7 @@
 ---
 title: Elephant Dry Gin
 superscript: "3 10"
-category: Gin Tonic
+category: Longdrinks
 subcategory: ""
 description: ""
 price1: "9,0"

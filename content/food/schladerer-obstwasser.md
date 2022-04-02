@@ -1,7 +1,7 @@
 ---
 title: Schladerer Obstwasser
 superscript: ""
-category: Digestif
+category: "Schnaps & Likör"
 subcategory: "shot"
 description: ""
 price1: "2,2"

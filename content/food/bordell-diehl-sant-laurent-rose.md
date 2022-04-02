@@ -2,7 +2,7 @@
 title: Bordell-Diehl St. Laurent Rose
 superscript: M
 category: Wein
-subcategory: Weisswein/Rose
+subcategory: Rose
 description: x
 price1: "3,8"
 price2: "9,0"

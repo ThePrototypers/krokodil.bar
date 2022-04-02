@@ -1,7 +1,7 @@
 ---
 title: Old Fashioned
 superscript: ""
-category: Digestif
+category: "Schnaps & Likör"
 subcategory: ""
 description: Bulleit Burbon, Angostura Bitter, Rohrzuckersyrup
 price1: "7,5"

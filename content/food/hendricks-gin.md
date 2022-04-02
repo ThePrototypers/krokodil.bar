@@ -1,7 +1,7 @@
 ---
 title: Hendrick's Gin
 superscript: "3 10"
-category: Gin Tonic
+category: Longdrinks
 subcategory: ""
 description: ""
 price1: "8,5"

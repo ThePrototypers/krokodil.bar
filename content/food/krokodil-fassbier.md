@@ -2,9 +2,9 @@
 title: Krokodil Hausbier
 superscript:
 category: Bier
-subcategory: "Flaschenbier"
+subcategory: "Fassbier"
 description:
-price1: 2,7
-price2: 3,3
-price3: 11,5
+price1: 2,3
+price2: 3,1
+price3: 11,0
 ---

@@ -1,7 +1,7 @@
 ---
 title: Ferrand 10 Generations Cognac
 superscript: ""
-category: Digestif
+category: "Schnaps & Likör"
 subcategory: "shot"
 description: ""
 price1: "4,5"

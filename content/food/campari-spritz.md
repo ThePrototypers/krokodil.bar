@@ -1,8 +1,8 @@
 ---
 title: Campari Spritz
 superscript: "M 1"
-category: Spritz
-subcategory: ""
+category: Aperitif
+subcategory: "Spritz"
 description: ""
 price1: "6,2"
 price2: ""

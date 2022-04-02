@@ -1,8 +1,8 @@
 ---
 title: Italicus Spritz
 superscript: "M"
-category: Spritz
-subcategory: ""
+category: Aperitif
+subcategory: "Spritz"
 description: ""
 price1: "7,9"
 price2: ""

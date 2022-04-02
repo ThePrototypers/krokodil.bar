@@ -2,7 +2,7 @@
 title: Weisswein-Schorle (Hauswein)
 superscript: M
 category: Wein
-subcategory: Weisswein/Rose
+subcategory: Schorlen
 description: x
 price1: "3,4"
 price2: "--"

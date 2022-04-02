@@ -2,7 +2,7 @@
 title: Krokodil Hauswein
 superscript: M
 category: Wein
-subcategory: Weisswein/Rose
+subcategory: Weisswein
 description: x
 price1: "3,6"
 price2: "8,2"

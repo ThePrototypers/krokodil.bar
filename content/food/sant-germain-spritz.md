@@ -1,8 +1,8 @@
 ---
 title: St. Germain Spritz
 superscript: "M"
-category: Spritz
-subcategory: ""
+category: Aperitif
+subcategory: "Spritz"
 description: ""
 price1: "7,3"
 price2: ""

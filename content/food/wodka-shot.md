@@ -1,10 +1,10 @@
 ---
-title: No Mistake Old Tom Gin
+title: Wodka
 superscript: ""
 category: "Schnaps & Likör"
-subcategory: "shot"
+subcategory: "Wodka & Korn"
 description: ""
-price1: "4,7"
-price2: "8,5"
+price1: "4,0"
+price2: "7,5"
 price3: ""
 ---

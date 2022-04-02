@@ -1,7 +1,7 @@
 ---
 title: Chartreuse Verte
 superscript: ""
-category: Digestif
+category: "Schnaps & Likör"
 subcategory: "shot"
 description: ""
 price1: "3,0"

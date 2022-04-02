@@ -1,10 +1,10 @@
 ---
 title: Undone Aperitivo Tonic
 superscript: ""
-category: Alkoholfrei
-subcategory: "Cocktails"
-description: "Undone Italian Aperivivo, Thomas Henry Tonic"
-price1: "5,5"
+category: Cocktails
+subcategory: "Alkoholfrei & Trotzdem gut"
+description: "Undone Italian Aperitivo, Thomas Henry Tonic"
+price1: "9,9"
 price2: ""
 price3: ""
 ---
