@@ -32,14 +32,14 @@ export async function getStaticProps() {
 function compare(a, b) {
   // define the order once and sort according to index in order array
   const order = [
-    "Fassbier",
+    "Bier",
     "Wein",
     "Aperitif",
-    "Spritz",
-    "Gin Tonic",
+    "Longdrinks",
     "Cocktails",
-    "Digestif",
-    "Alkoholfrei",
+    "Schnaps & Likör",
+    "Limo & Mate",
+    "Kaffee & Tee",
     "Zusatzstoffe",
   ];
   let x = order.indexOf(a[0]);
@@ -104,14 +104,16 @@ export default function Menu({ foodsByCategories }) {
                             <Disclosure.Panel>
                               {categoryName === "Wein"
                                 ? handleWein(foods)
-                                : categoryName === "Fassbier"
+                                : categoryName === "Bier"
                                 ? handleBeer(foods)
-                                : categoryName === "Digestif"
-                                ? handleDigestif(foods)
-                                : categoryName === "Alkoholfrei"
-                                ? handleSoda(foods)
+                                : categoryName === "Schnaps & Likör"
+                                ? handleSchnapsLikor(foods)
                                 : categoryName == "Zusatzstoffe"
                                 ? handleSupplement(foods)
+                                : categoryName == "Cocktails"
+                                ? handleCocktail(foods)
+                                : categoryName == "Aperitif"
+                                ? handleAperitif(foods)
                                 : foods.sort().map((food) => (
                                     <div
                                       key={food.title}
@@ -154,7 +156,360 @@ export default function Menu({ foodsByCategories }) {
   );
 }
 
-const handleDigestif = (foods) => {
+function comparePrice(a, b) {
+  if (parseInt(a.price1) < parseInt(b.price1)) {
+    return -1;
+  }
+  if (parseInt(a.price1) > parseInt(b.price1)) {
+    return 1;
+  }
+  // a must be equal to b
+  return 0;
+}
+
+const handleSupplement = (foods) => {
+  return (
+    <div className="mt-4 mb-4">
+      {foods.sort(comparePrice).map((food) => (
+        <span
+          key={food.title}
+          className="font-yanone font-normal p-1 uppercase text-[#8B8B8B] text-[20px] leading-[1em]"
+        >
+          {food.title}
+        </span>
+      ))}
+    </div>
+  );
+};
+
+const handleBeer = (foods) => {
+  return (
+    <div className="flex flex-col mt-2">
+      {handleBeerPrices(
+        "Flaschenbier",
+        foods.filter((f) => f.subcategory === "Flaschenbier")
+      )}
+
+      {handleBeerPrices(
+        "Fassbier",
+        foods.filter((f) => f.subcategory === "Fassbier")
+      )}
+    </div>
+  );
+};
+
+const handleBeerPrices = (title, beers) => {
+  return (
+    <div className="mt-6 grid grid-cols-5 space-y-4">
+      <div className="mt-6 col-span-2 text-krokodil-yellow-dark uppercase font-yanone desktop:text-3xl text-lg">
+        {title}
+      </div>
+      <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+        <div>0,3L</div>
+      </div>
+      <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+        <div>0,4L</div>
+      </div>
+      <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+        <div>Pitcher</div>
+      </div>
+
+      {beers.map((w) => {
+        return (
+          <React.Fragment key={w.title}>
+            <div className="col-span-2 leading-[1.35em] font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
+              {w.title}
+              <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">
+                {w.superscript}
+              </sup>
+            </div>
+            <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
+              {w.price1}
+            </div>
+            <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
+              {w.price2}
+            </div>
+            <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
+              {w.price3}
+            </div>
+          </React.Fragment>
+        );
+      })}
+    </div>
+  );
+};
+
+const handleWein = (foods) => {
+  return (
+    <div className="flex flex-col mt-2">
+      {handleWinePrices(
+        "Rotwein",
+        foods.filter((f) => f.subcategory === "Rotwein")
+      )}
+
+      {handleWinePrices(
+        "Weißwein",
+        foods.filter((f) => f.subcategory === "Weisswein")
+      )}
+
+      {handleWinePrices(
+        "Rose",
+        foods.filter((f) => f.subcategory === "Rose")
+      )}
+
+      {handleWinePrices(
+        "Schorlen",
+        foods.filter((f) => f.subcategory === "Schorlen")
+      )}
+
+      {handleBubblyWinePrices(
+        "Schaumwein",
+        foods.filter((f) => f.subcategory === "Schaumwein")
+      )}
+    </div>
+  );
+};
+
+const handleWinePrices = (title, wines) => {
+  return (
+    <div className="mt-6 grid grid-cols-5 space-y-4">
+      <div className="mt-6 col-span-2 text-krokodil-yellow-dark uppercase font-yanone desktop:text-3xl text-lg">
+        {title}
+      </div>
+      <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+        <div>Glas</div>
+        <div>0,2L</div>
+      </div>
+      <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+        <div>Karaffe</div>
+        <div>0,5L</div>
+      </div>
+      <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+        <div>Flasche</div>
+        <div>0,7L</div>
+      </div>
+
+      {wines.map((w) => {
+        return (
+          <React.Fragment key={w.title}>
+            <div className="col-span-2 leading-[1.35em] font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
+              {w.title}
+              <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">
+                {w.superscript}
+              </sup>
+            </div>
+            <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
+              {w.price1}
+            </div>
+            <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
+              {w.price2}
+            </div>
+            <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
+              {w.price3}
+            </div>
+          </React.Fragment>
+        );
+      })}
+    </div>
+  );
+};
+
+const handleBubblyWinePrices = (title, wines) => {
+  return (
+    <div className="mt-6 grid grid-cols-5 space-y-4">
+      <div className="mt-6 col-span-2 text-krokodil-yellow-dark uppercase font-yanone desktop:text-3xl text-lg">
+        {title}
+      </div>
+      <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+        <div>Glas</div>
+        <div>0,1L</div>
+      </div>
+      <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+        <div>Flasche</div>
+        <div>0,75L</div>
+      </div>
+
+      {wines.map((w) => {
+        return (
+          <React.Fragment key={w.title}>
+            <div className="col-span-2 leading-[1.35em] font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
+              {w.title}
+              <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">
+                {w.superscript}
+              </sup>
+            </div>
+            <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
+              {w.price1}
+            </div>
+            <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
+              {w.price3}
+            </div>
+          </React.Fragment>
+        );
+      })}
+    </div>
+  );
+};
+
+const handleSchnapsLikor = (foods) => {
+  return (
+    <div className="flex flex-col">
+      {handleSchnapsLikorPrices(
+        "Whisky",
+        foods.filter((f) => f.subcategory === "Whisky")
+      )}
+
+      {handleSchnapsLikorPrices(
+        "Rum",
+        foods.filter((f) => f.subcategory === "Rum")
+      )}
+
+      {handleSchnapsLikorPrices(
+        "Wodka & Korn",
+        foods.filter((f) => f.subcategory === "Wodka & Korn")
+      )}
+
+      {handleSchnapsLikorPrices(
+        "Obstbrantwein",
+        foods.filter((f) => f.subcategory === "Obstbrantwein")
+      )}
+
+      {handleSchnapsLikorPrices(
+        "Gin",
+        foods.filter((f) => f.subcategory === "Gin")
+      )}
+
+      {handleSchnapsLikorPrices(
+        "Mezcal",
+        foods.filter((f) => f.subcategory === "Mezcal")
+      )}
+
+      {handleSchnapsLikorPrices(
+        "Kräuter",
+        foods.filter((f) => f.subcategory === "Kräuter")
+      )}
+
+      {handleSchnapsLikorPrices(
+        "Wermut & Likör",
+        foods.filter((f) => f.subcategory === "Wermut & Likör")
+      )}
+    </div>
+  );
+};
+
+const handleSchnapsLikorPrices = (title, likors) => {
+  return (
+    <div>
+      <div className="flex flex-col">
+        <div className="grid grid-cols-5 mt-6">
+          <div className="col-span-2 text-krokodil-yellow-dark uppercase font-yanone desktop:text-3xl text-lg">
+            {title}
+          </div>
+          <div className="text-krokodil-yellow-dark leading-[1em] uppercase self-center text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+            <div></div>
+          </div>
+          <div className="text-krokodil-yellow-dark leading-[1em] uppercase self-center text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+            <div>2CL</div>
+          </div>
+          <div className="text-krokodil-yellow-dark leading-[1em] uppercase self-center text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+            <div>4CL</div>
+          </div>
+
+          {likors.sort().map((w) => {
+            return (
+              <React.Fragment key={w.title}>
+                <div className="col-span-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
+                  {w.title}
+                </div>
+                <div className="text-right font-light font-yanone desktop:text-[26px] text-[16px]"></div>
+                <div className="text-right font-light font-yanone desktop:text-[26px] text-[16px]">
+                  {w.price1}
+                </div>
+                <div className="text-right font-light font-yanone desktop:text-[26px] text-[16px]">
+                  {w.price2}
+                </div>
+              </React.Fragment>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const handleCocktail = (foods) => {
+  return (
+    <div className="flex flex-col">
+      {handleCocktailPrices(
+        "Sauer & Cremig",
+        foods.filter((f) => f.subcategory === "Sauer & Cremig")
+      )}
+
+      {handleCocktailPrices(
+        "Vollmundig & Kräftig",
+        foods.filter((f) => f.subcategory === "Vollmundig & Kräftig")
+      )}
+
+      {handleCocktailPrices(
+        "Frisch & Prickelnd",
+        foods.filter((f) => f.subcategory === "Frisch & Prickelnd")
+      )}
+
+      {handleCocktailPrices(
+        "Elegant & Trocken",
+        foods.filter((f) => f.subcategory === "Elegant & Trocken")
+      )}
+
+      {handleCocktailPrices(
+        "Alkoholfrei & Trotzdem gut",
+        foods.filter((f) => f.subcategory === "Alkoholfrei & Trotzdem gut")
+      )}
+    </div>
+  );
+};
+
+const handleCocktailPrices = (title, likors) => {
+  return (
+    <div>
+      <div className="flex flex-col">
+        <div className="mt-6">
+          <div className="col-span-5 text-krokodil-yellow-dark uppercase font-yanone desktop:text-3xl text-lg">
+            {title}
+          </div>
+
+          {likors.sort().map((w) => {
+            return (
+              <React.Fragment key={w.title}>
+                <div key={w.title} className="grid grid-cols-5">
+                  <div className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
+                    <div>
+                      {w.title}
+                      <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">
+                        {w.superscript}
+                      </sup>
+                    </div>
+                    <div
+                      className={`${
+                        w.description == "" ? "" : "mb-1"
+                      } -mt-[0.25em] font-medium uppercase leading-[1em] desktop:text-[20px] text-[16px] text-[#8B8B8B]`}
+                    >
+                      {w.description}
+                    </div>
+                  </div>
+                  <div className="col-span-2 text-right font-yanone font-light desktop:text-[26px] text-[16px]">
+                    {w.price1}
+                  </div>
+                </div>
+              </React.Fragment>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const handleAperitif = (foods) => {
   return (
     <div>
       {foods
@@ -183,226 +538,30 @@ const handleDigestif = (foods) => {
 
       <div className="flex flex-col">
         <div className="grid grid-cols-4 mt-2">
-          <div className="col-span-2 text-xl uppercase font-bold"></div>
-          <div className="text-krokodil-yellow-dark text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
-            <div></div>
-            <div>2CL</div>
-          </div>
-          <div className="text-krokodil-yellow-dark text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
-            <div></div>
-            <div>4CL</div>
+          <div className="mt-6 mb-2 col-span-4 text-krokodil-yellow-dark uppercase font-yanone desktop:text-3xl text-lg">
+            Spritz
           </div>
 
           {foods
-            .filter((food) => food.subcategory === "shot")
+            .filter((food) => food.subcategory === "Spritz")
             .sort()
             .map((w) => {
               return (
                 <React.Fragment key={w.title}>
                   <div className="col-span-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
                     {w.title}
+                    <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">
+                      {w.superscript}
+                    </sup>
                   </div>
-                  <div className="text-right font-light font-yanone desktop:text-[26px] text-[16px]">
+                  <div className="col-span-2 text-right font-light font-yanone desktop:text-[26px] text-[16px]">
                     {w.price1}
-                  </div>
-                  <div className="text-right font-light font-yanone desktop:text-[26px] text-[16px]">
-                    {w.price2}
                   </div>
                 </React.Fragment>
               );
             })}
         </div>
       </div>
-    </div>
-  );
-};
-
-const handleBeer = (foods) => {
-  return (
-    <div className="flex flex-col mt-2">
-      <div className="mt-5 grid grid-cols-5">
-        <div className="col-span-2 text-xl uppercase text-yellow-700 font-bold"></div>
-        <div className="text-krokodil-yellow-dark text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
-          <div></div>
-          <div>0,3L</div>
-        </div>
-        <div className="text-krokodil-yellow-dark text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
-          <div></div>
-          <div>0,4L</div>
-        </div>
-        <div className="text-krokodil-yellow-dark text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
-          <div>1,5L</div>
-        </div>
-
-        {foods.sort().map((w) => {
-          return (
-            <React.Fragment key={w.title}>
-              <div className="col-span-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-                {w.title}
-              </div>
-              <div className="text-right font-light font-yanone desktop:text-[26px] text-[16px]">
-                {w.price1}
-              </div>
-              <div className="text-right font-light font-yanone desktop:text-[26px] text-[16px]">
-                {w.price2}
-              </div>
-              <div className="text-right font-light font-yanone desktop:text-[26px] text-[16px]">
-                {w.price3}
-              </div>
-            </React.Fragment>
-          );
-        })}
-      </div>
-    </div>
-  );
-};
-
-const handleWein = (foods) => {
-  return (
-    <div className="flex flex-col mt-2">
-      {handleWinePrices(
-        "Rotwein",
-        foods.filter((f) => f.subcategory === "Rotwein")
-      )}
-
-      {handleWinePrices(
-        "Weißwein/Rose",
-        foods.filter((f) => f.subcategory === "Weisswein/Rose")
-      )}
-
-      {handleWinePrices(
-        "Schaumwein",
-        foods.filter((f) => f.subcategory === "Schaumwein")
-      )}
-    </div>
-  );
-};
-
-const handleWinePrices = (title, wines) => {
-  return (
-    <div className="mt-6 grid grid-cols-5 space-y-4">
-      <div className="mt-6 col-span-2 text-krokodil-yellow-dark uppercase font-yanone desktop:text-3xl text-lg">
-        {title}
-      </div>
-      <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
-        <div>Glas</div>
-        <div>0,2L</div>
-      </div>
-      <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
-        <div>Karaffe</div>
-        <div>0,5L</div>
-      </div>
-      <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
-        <div>Flasche</div>
-        <div>0,7L/1L</div>
-      </div>
-
-      {wines.map((w) => {
-        return (
-          <React.Fragment key={w.title}>
-            <div className="col-span-2 leading-[1.35em] font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
-              {w.title}
-              <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">
-                {w.superscript}
-              </sup>
-            </div>
-            <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-              {w.price1}
-            </div>
-            <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-              {w.price2}
-            </div>
-            <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-              {w.price3}
-            </div>
-          </React.Fragment>
-        );
-      })}
-    </div>
-  );
-};
-
-const handleSoda = (foods) => {
-  return (
-    <div className="flex flex-col mt-2">
-      {handleSodaPrices(
-        "Cocktails",
-        foods.filter((f) => f.subcategory === "Cocktails")
-      )}
-
-      {handleSodaPrices(
-        "Limos",
-        foods.filter((f) => f.subcategory === "Limos")
-      )}
-
-      {handleSodaPrices(
-        "Warmes",
-        foods.filter((f) => f.subcategory === "Warmes")
-      )}
-    </div>
-  );
-};
-
-const handleSodaPrices = (title, sodas) => {
-  return (
-    <div className="mt-6 grid grid-cols-4 space-y-4">
-      <div className="mt-6 col-span-4 text-krokodil-yellow-dark uppercase font-yanone desktop:text-3xl text-lg">
-        {title}
-      </div>
-
-      {sodas.map((w) => {
-        return (
-          <React.Fragment key={w.title}>
-            <div
-              key={w.title}
-              className="col-span-3 mt-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]"
-            >
-              <div>
-                {w.title}
-                <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">
-                  {w.superscript}
-                </sup>
-              </div>
-              <div
-                className={`${
-                  w.description == "" ? "" : "mb-1"
-                } -mt-[0.25em] font-medium uppercase leading-[1em] desktop:text-[20px] text-[16px] text-[#8B8B8B]`}
-              >
-                {w.description}
-              </div>
-            </div>
-            <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
-              {w.price1}
-            </div>
-          </React.Fragment>
-        );
-      })}
-    </div>
-  );
-};
-
-function comparePrice(a, b) {
-  if (parseInt(a.price1) < parseInt(b.price1)) {
-    return -1;
-  }
-  if (parseInt(a.price1) > parseInt(b.price1)) {
-    return 1;
-  }
-  // a must be equal to b
-  return 0;
-}
-
-const handleSupplement = (foods) => {
-  return (
-    <div className="mt-4 mb-4">
-      {foods.sort(comparePrice).map((food) => (
-        <span
-          key={food.title}
-          className="font-yanone font-normal p-1 uppercase text-[#8B8B8B] text-[20px] leading-[1em]"
-        >
-          {food.title}
-        </span>
-      ))}
     </div>
   );
 };
