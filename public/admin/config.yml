@@ -32,7 +32,7 @@ collections:
           label: "Kategorie",
           name: "category",
           widget: "select",
-          options: ["Fassbier", "Wein", "Aperitif", "Spritz", "Gin Tonic", "Cocktails", "Digestif", "Alkoholfrei"],
+          options: ["Bier", "Wein", "Aperitif", "Longdrinks", "Cocktails", "Schnaps & Likör", "Limo & Mate", "Kaffee & Tee", "Zusatzstoffe"],
           default: "Fassbier",
           required: true
         }
