@@ -1,10 +1,10 @@
 ---
-title: Campari Spritz
-superscript: "M 1"
+title: Campari
+superscript: M
 category: Aperitif
-subcategory: "Spritz"
+subcategory: Spritz
 description: ""
-price1: "6,2"
+price1: 7,0
 price2: ""
 price3: ""
 ---
