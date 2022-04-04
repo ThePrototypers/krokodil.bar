@@ -1,10 +1,10 @@
 ---
-title: Prosecco
+title: Cavalier Sekt
 superscript: M
 category: Wein
 subcategory: Schaumwein
 description: 0.1L
-price1: "3,0"
-price2: "--"
-price3: "18,0"
+price1: 3,5
+price2: --
+price3: 20,0
 ---

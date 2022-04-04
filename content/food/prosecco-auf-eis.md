@@ -1,10 +1,10 @@
 ---
-title: Prosecco auf Eis
+title: Sekt auf Eis
 superscript: M
 category: Wein
 subcategory: Schaumwein
 description: 0.2L
-price1: "5,0"
-price2: "--"
-price3: "--"
+price1: 6,0
+price2: --
+price3: --
 ---
