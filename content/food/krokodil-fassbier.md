@@ -1,10 +1,10 @@
 ---
-title: Krokodil Hausbier
-superscript:
+title: Krokos Hausbier
+superscript: A
 category: Bier
-subcategory: "Fassbier"
-description:
-price1: 2,3
-price2: 3,1
-price3: 11,0
+subcategory: Fassbier
+description: null
+price1: 3,0
+price2: 3,6
+price3: 12,0
 ---
