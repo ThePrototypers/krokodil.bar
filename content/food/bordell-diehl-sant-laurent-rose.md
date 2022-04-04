@@ -2,7 +2,7 @@
 title: St. Laurent Rosé, Borell- Diehl, Pfalz
 superscript: M
 category: Wein
-subcategory: Rose
+subcategory: Rosé
 description: x
 price1: 4,5
 price2: 10,0
