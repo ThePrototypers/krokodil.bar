@@ -1,10 +1,10 @@
 ---
-title: Aperol Spritz
-superscript: M 1 10
+title: Aperol
+superscript: M,F
 category: Aperitif
-subcategory: "Spritz"
+subcategory: Spritz
 description: ""
-price1: "6,0"
+price1: 6,5
 price2: ""
 price3: ""
 ---
