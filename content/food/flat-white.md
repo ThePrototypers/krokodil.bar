@@ -1,0 +1,10 @@
+---
+title: Flat White
+superscript: "9"
+category: Kaffee & Tee
+subcategory: ""
+description: auch mit Hafermilch
+price1: 3,8
+price2: ""
+price3: ""
+---
