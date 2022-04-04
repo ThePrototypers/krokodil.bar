@@ -1,10 +1,10 @@
 ---
 title: Chartreuse Verte
 superscript: ""
-category: "Schnaps & Likör"
-subcategory: "shot"
+category: Schnaps & Likör
+subcategory: Kräuter
 description: ""
-price1: "3,0"
-price2: "5,8"
+price1: 3,5
+price2: 6,5
 price3: ""
 ---
