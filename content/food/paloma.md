@@ -2,9 +2,9 @@
 title: Paloma
 superscript: ""
 category: Cocktails
-subcategory: "Vollmundig & Kräftig"
-description: "Mezcal, Grapefruitsaft, Zuckersyrup, Mineralwasser, Salz"
-price1: "7,9"
+subcategory: Frisch & Prickelnd
+description: BruXo X Mezcal Joven, Graipfruitsaft, Agavensirup, Soda
+price1: 9,0
 price2: ""
 price3: ""
 ---
