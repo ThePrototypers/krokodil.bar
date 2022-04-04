@@ -1,10 +1,10 @@
 ---
 title: Espresso Martini
-superscript: ""
+superscript: 1,9
 category: Cocktails
-subcategory: "Elegant & Trocken"
-description: "Wodka, Kahlua, Espresso Shot"
-price1: "9,0"
+subcategory: Vollmundig & Kräfitg
+description: Green Mark Wodka, Kahlua Coffee Liqueur, Espresso shot
+price1: 9,0
 price2: ""
 price3: ""
 ---
