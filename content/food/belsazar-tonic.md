@@ -1,10 +1,10 @@
 ---
-title: Belsazar Tonic
-superscript: "M 3 10"
+title: Ti' Punch
+superscript: M
 category: Aperitif
 subcategory: ""
-description: ""
-price1: "5,5"
+description: Saint James Imperial Blanc Rhum Agricole, Limette, Rohrzuckersirup
+price1: 7,5
 price2: ""
 price3: ""
 ---
