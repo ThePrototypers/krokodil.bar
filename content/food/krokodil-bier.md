@@ -1,10 +1,10 @@
 ---
-title: Krokodil Hausbier
-superscript:
+title: Jever 0,33l
+superscript: A
 category: Bier
-subcategory: "Flaschenbier"
-description:
-price1: 2,7
-price2: 3,3
-price3: 11,5
+subcategory: Flaschenbier
+description: null
+price1: 3,0
+price2: ""
+price3: ""
 ---
