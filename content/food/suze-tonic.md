@@ -1,10 +1,10 @@
 ---
 title: Suze Tonic
-superscript: ""
+superscript: 1,10, M, F
 category: Aperitif
 subcategory: ""
 description: ""
-price1: "5,8"
+price1: 8,5
 price2: ""
 price3: ""
 ---
