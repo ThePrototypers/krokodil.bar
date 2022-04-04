@@ -1,10 +1,10 @@
 ---
-title: "11: Koffeinhaltig"
+title: "9: Koffeinhaltig"
 superscript: ""
 category: Zusatzstoffe
 subcategory: ""
 description: ""
-price1: 110
+price1: "90"
 price2: ""
 price3: ""
 ---
