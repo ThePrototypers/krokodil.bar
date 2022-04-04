@@ -7,4 +7,5 @@ description: null
 price1: --
 price2: --
 price3: 70,0
+order: 1
 ---

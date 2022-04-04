@@ -5,4 +5,5 @@ category: Cocktails
 subcategory: Vollmundig & Kräftig
 description: Jose Cuervo Especial Joven, Dom Bénédictine, Limettensaft, Salbeisirup
 price1: 9,5
+order: 1
 ---

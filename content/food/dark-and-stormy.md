@@ -7,4 +7,5 @@ description: Plantation Original Dark Rum, Limettensaft, Thomas Henry Spicy Ging
 price1: 8,5
 price2: ""
 price3: ""
+order: 1
 ---

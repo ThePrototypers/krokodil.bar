@@ -7,4 +7,5 @@ description: Benromach - Speyside Single Malt, St. Germain - Hollunderblütenlik
 price1: 12,0
 price2: ""
 price3: ""
+order: 1
 ---

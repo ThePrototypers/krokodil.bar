@@ -7,4 +7,5 @@ description: 0.2L
 price1: 6,0
 price2: --
 price3: --
+order: 1
 ---

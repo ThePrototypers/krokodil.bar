@@ -5,4 +5,5 @@ category: Cocktails
 subcategory: Vollmundig & Kräftig
 description: Belmont Estate Gold Coconut Spirit, Ananassaft
 price1: 9,5
+order: 1
 ---

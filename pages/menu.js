@@ -38,7 +38,7 @@ function compare(a, b) {
     "Longdrinks",
     "Cocktails",
     "Schnaps & Likör",
-    "Limo & Mate",
+    "Limo, Mate & Wasser",
     "Kaffee & Tee",
     "Zusatzstoffe",
   ];
@@ -116,7 +116,7 @@ export default function Menu({ foodsByCategories }) {
                                 ? handleAperitif(foods)
                                 : categoryName == "Longdrinks"
                                 ? handleLongdrinks(foods)
-                                : foods.sort().map((food) => (
+                                : foods.sort(compareOrder).map((food) => (
                                     <div
                                       key={food.title}
                                       className="grid grid-cols-4 space-y-4"
@@ -163,6 +163,17 @@ function comparePrice(a, b) {
     return -1;
   }
   if (parseInt(a.price1) > parseInt(b.price1)) {
+    return 1;
+  }
+  // a must be equal to b
+  return 0;
+}
+
+function compareOrder(a, b) {
+  if (parseInt(a.order) > parseInt(b.order)) {
+    return -1;
+  }
+  if (parseInt(a.order) < parseInt(b.order)) {
     return 1;
   }
   // a must be equal to b
@@ -216,7 +227,7 @@ const handleBeerPrices = (title, beers) => {
         <div>Pitcher</div>
       </div>
 
-      {beers.map((w) => {
+      {beers.sort(compareOrder).map((w) => {
         return (
           <React.Fragment key={w.title}>
             <div className="col-span-2 leading-[1.35em] font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
@@ -291,7 +302,7 @@ const handleWinePrices = (title, wines) => {
         <div>0,7L</div>
       </div>
 
-      {wines.map((w) => {
+      {wines.sort(compareOrder).map((w) => {
         return (
           <React.Fragment key={w.title}>
             <div className="col-span-2 leading-[1.35em] font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
@@ -331,7 +342,7 @@ const handleBubblyWinePrices = (title, wines) => {
         <div>0,75L</div>
       </div>
 
-      {wines.map((w) => {
+      {wines.sort(compareOrder).map((w) => {
         return (
           <React.Fragment key={w.title}>
             <div className="col-span-2 leading-[1.35em] font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
@@ -382,8 +393,8 @@ const handleSchnapsLikor = (foods) => {
       )}
 
       {handleSchnapsLikorPrices(
-        "Mezcal",
-        foods.filter((f) => f.subcategory === "Mezcal")
+        "Mezcal & Tequila",
+        foods.filter((f) => f.subcategory === "Mezcal & Tequila")
       )}
 
       {handleSchnapsLikorPrices(
@@ -417,13 +428,12 @@ const handleSchnapsLikorPrices = (title, likors) => {
             <div>4CL</div>
           </div>
 
-          {likors.sort().map((w) => {
+          {likors.sort(compareOrder).map((w) => {
             return (
               <React.Fragment key={w.title}>
-                <div className="col-span-2 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
+                <div className="col-span-3 font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
                   {w.title}
                 </div>
-                <div className="text-right font-light font-yanone desktop:text-[26px] text-[16px]"></div>
                 <div className="text-right font-light font-yanone desktop:text-[26px] text-[16px]">
                   {w.price1}
                 </div>
@@ -479,7 +489,7 @@ const handleCocktailPrices = (title, likors) => {
             {title}
           </div>
 
-          {likors.sort().map((w) => {
+          {likors.sort(compareOrder).map((w) => {
             return (
               <React.Fragment key={w.title}>
                 <div key={w.title} className="grid grid-cols-5">
@@ -516,7 +526,7 @@ const handleAperitif = (foods) => {
     <div>
       {foods
         .filter((food) => food.subcategory !== "Spritz")
-        .sort()
+        .sort(compareOrder)
         .map((food) => {
           return (
             <div key={food.title} className="grid grid-cols-4 mt-2">
@@ -546,7 +556,7 @@ const handleAperitif = (foods) => {
 
           {foods
             .filter((food) => food.subcategory === "Spritz")
-            .sort()
+            .sort(compareOrder)
             .map((w) => {
               return (
                 <React.Fragment key={w.title}>
@@ -579,7 +589,7 @@ const handleLongdrinks = (foods) => {
 
           {foods
             .filter((food) => food.subcategory === "Gin-Tonic")
-            .sort()
+            .sort(compareOrder)
             .map((w) => {
               return (
                 <React.Fragment key={w.title}>
@@ -600,7 +610,7 @@ const handleLongdrinks = (foods) => {
 
       {foods
         .filter((food) => food.subcategory !== "Gin-Tonic")
-        .sort()
+        .sort(compareOrder)
         .map((food) => {
           return (
             <div key={food.title} className="grid grid-cols-4 mt-2">

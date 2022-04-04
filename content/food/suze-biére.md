@@ -7,4 +7,5 @@ description: Hausbier mit Suze
 price1: 5,0
 price2: --
 price3: --
+order: 1
 ---

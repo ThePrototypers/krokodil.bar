@@ -7,4 +7,5 @@ description: x
 price1: 6,2
 price2: --
 price3: --
+order: 1
 ---
