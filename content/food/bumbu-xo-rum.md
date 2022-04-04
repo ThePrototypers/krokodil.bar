@@ -1,10 +1,10 @@
 ---
-title: Bumbu Xo Rum
+title: Bumbu - XO
 superscript: ""
-category: "Schnaps & Likör"
-subcategory: "Rum"
+category: Schnaps & Likör
+subcategory: Rum
 description: ""
-price1: "4,0"
-price2: "7,5"
+price1: 4,0
+price2: 7,5
 price3: ""
 ---
