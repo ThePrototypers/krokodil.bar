@@ -1,10 +1,10 @@
 ---
-title: Elephant Dry Gin
-superscript: "3 10"
+title: + Ukiyo Yuzo
+superscript: 10,M,F
 category: Longdrinks
-subcategory: ""
+subcategory: Gin-Tonic
 description: ""
-price1: "9,0"
+price1: 10,0
 price2: ""
 price3: ""
 ---
