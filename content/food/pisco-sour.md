@@ -1,10 +1,10 @@
 ---
 title: Pisco Sour
-superscript: ""
+superscript: A,G
 category: Cocktails
-subcategory: ""
-description: "Barsol Pisco, Zitronensaft, Rohrzuckersyrup, Aquafaba"
-price1: "8,5"
+subcategory: Sauer & Cremig
+description: Pisco Puro Quebranta Pancho Fierro, Zitronensaft, Rohrzuckersirup, Aquafaba
+price1: 9,0
 price2: ""
 price3: ""
 ---
