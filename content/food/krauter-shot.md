@@ -1,10 +1,10 @@
 ---
-title: Kräuter
-superscript: ""
-category: "Schnaps & Likör"
-subcategory: "Kräuter"
+title: Fernet Branca
+superscript: M
+category: Schnaps & Likör
+subcategory: Kräuter
 description: ""
-price1: "4,0"
-price2: "7,5"
+price1: 2,5
+price2: 4,5
 price3: ""
 ---
