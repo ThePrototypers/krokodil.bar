@@ -1,10 +1,10 @@
 ---
-title: Gin Tonic
-superscript: "A"
-category: "Longdrinks"
-subcategory: "Gin-Tonic"
-description: "B"
-price1: "4,0"
-price2: "7,5"
+title: + Bricks
+superscript: 10,M,F
+category: Longdrinks
+subcategory: Gin-Tonic
+description: ""
+price1: 7,5
+price2: ""
 price3: ""
 ---
