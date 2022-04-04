@@ -1,5 +1,5 @@
 ---
-title: Bumbu- Original
+title: Bumbu - Original
 category: Schnaps & Likör
 subcategory: Rum
 price1: 2,8
