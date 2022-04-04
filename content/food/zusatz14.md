@@ -1,10 +1,10 @@
 ---
-title: "14: Gewachst"
+title: "12: Gewachst"
 superscript: ""
 category: Zusatzstoffe
 subcategory: ""
 description: ""
-price1: 140
+price1: "120"
 price2: ""
 price3: ""
 ---
