@@ -1,5 +1,5 @@
 ---
-title: "L: Senf"
+title: "J: enthält Sesam"
 superscript: ""
 category: Zusatzstoffe
 subcategory: ""
