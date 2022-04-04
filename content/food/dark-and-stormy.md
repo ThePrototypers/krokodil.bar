@@ -1,10 +1,10 @@
 ---
 title: Dark & Stormy
-superscript: ""
+superscript: 1,M
 category: Cocktails
-subcategory: ""
-description: "Plantation Original Dark, Limettensaft, Thomas Henry Spicy Ginginger, Gurke"
-price1: "8,5"
+subcategory: Frisch & Prickelnd
+description: Plantation Original Dark Rum, Limettensaft, Thomas Henry Spicy Ginger
+price1: 8,5
 price2: ""
 price3: ""
 ---
