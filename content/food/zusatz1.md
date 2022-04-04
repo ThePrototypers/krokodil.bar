@@ -1,5 +1,5 @@
 ---
-title: "1: Mit Konservierungsstoffen"
+title: "1: Mit Farbstoffen"
 superscript: ""
 category: Zusatzstoffe
 subcategory: ""
