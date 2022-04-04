@@ -2,9 +2,9 @@
 title: Naked & Famous
 superscript: ""
 category: Cocktails
-subcategory: ""
-description: "Mezcal, Aperol, Chartreuse Jaune, Limettensaft"
-price1: "9,0"
+subcategory: Vollmundig & Kräftig
+description: BruXo X Mezcal Joven, Aperol, Chartruese Jaune, Limettensaft
+price1: 10,0
 price2: ""
 price3: ""
 ---
