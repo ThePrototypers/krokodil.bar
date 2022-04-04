@@ -1,10 +1,10 @@
 ---
-title: St. Germain Spritz
-superscript: "M"
+title: St. Germain
+superscript: M
 category: Aperitif
-subcategory: "Spritz"
+subcategory: Spritz
 description: ""
-price1: "7,3"
+price1: 8,0
 price2: ""
 price3: ""
 ---
