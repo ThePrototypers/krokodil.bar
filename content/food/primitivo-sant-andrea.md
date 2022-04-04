@@ -1,10 +1,10 @@
 ---
-title: Primitivo Sant Andrea
+title: Primitivo di Manduria, Italy
 superscript: M
 category: Wein
 subcategory: Rotwein
 description: x
-price1: "5,6"
-price2: "13,0"
-price3: "18,2"
+price1: 6,5
+price2: 14,5
+price3: 18,5
 ---
