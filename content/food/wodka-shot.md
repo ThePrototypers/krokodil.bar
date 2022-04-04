@@ -1,10 +1,10 @@
 ---
-title: Wodka
-superscript: ""
-category: "Schnaps & Likör"
-subcategory: "Wodka & Korn"
+title: Greemark
+superscript: A
+category: Schnaps & Likör
+subcategory: Wodka & Korn
 description: ""
-price1: "4,0"
-price2: "7,5"
+price1: 2,5
+price2: 4,5
 price3: ""
 ---
