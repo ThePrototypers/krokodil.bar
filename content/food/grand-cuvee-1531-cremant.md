@@ -1,10 +1,10 @@
 ---
-title: Grand Cuvee 1531 Cremant
+title: Grand Cuvée 1531, Crémant de Limoux
 superscript: M
 category: Wein
 subcategory: Schaumwein
-description:
-price1: "--"
-price2: "--"
-price3: "29,0"
+description: null
+price1: --
+price2: --
+price3: 35,0
 ---
