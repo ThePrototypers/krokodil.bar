@@ -1,10 +1,10 @@
 ---
-title: Bonanto Spritz
-superscript: "M"
+title: Bonanto
+superscript: M
 category: Aperitif
-subcategory: "Spritz"
+subcategory: Spritz
 description: ""
-price1: "6,5"
+price1: 7,5
 price2: ""
 price3: ""
 ---
