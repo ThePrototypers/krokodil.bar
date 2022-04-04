@@ -1,10 +1,10 @@
 ---
-title: Bordell-Diehl St. Laurent Rose
+title: St. Laurent Rosé, Borell- Diehl, Pfalz
 superscript: M
 category: Wein
 subcategory: Rose
 description: x
-price1: "3,8"
-price2: "9,0"
-price3: "17,0"
+price1: 4,5
+price2: 10,0
+price3: 19,0
 ---
