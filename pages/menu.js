@@ -73,7 +73,7 @@ export default function Menu({ foodsByCategories }) {
                   return (
                     <div key={categoryName}>
                       <Disclosure
-                        defaultOpen={categoryName == "Fassbier" ? true : false}
+                        defaultOpen={categoryName == "Bier" ? true : false}
                       >
                         {({ open }) => (
                           <>
