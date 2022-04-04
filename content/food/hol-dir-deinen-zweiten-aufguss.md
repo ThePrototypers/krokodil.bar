@@ -1,5 +1,5 @@
 ---
 title: Hol dir deinen zweiten Aufguss
-category: Limo & Mate
+category: Kaffee & Tee
 price1: --
 ---
