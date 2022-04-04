@@ -1,7 +1,7 @@
 ---
 title: Thomas Henry - Spicy Ginger
 superscript: M
-category: Limo & Mate
+category: Limo, Mate & Wasser
 subcategory: ""
 description: ""
 price1: 3,0
