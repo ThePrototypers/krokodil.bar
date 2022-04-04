@@ -1,10 +1,10 @@
 ---
 title: Whiskey Sour
-superscript: ""
+superscript: A,G
 category: Cocktails
-subcategory: ""
-description: "Bulleit Whiskey, Zitronensaft, Rohrzuckersyrup, Aquafaba"
-price1: "8,5"
+subcategory: Sauer & Cremig
+description: Buffalo Trace Straight Bourbon, Zitronensaft, Rohrzuckersirup, Aquafaba
+price1: 9,0
 price2: ""
 price3: ""
 ---
