@@ -1,10 +1,10 @@
 ---
-title: Hendrick's Gin
-superscript: "3 10"
+title: + Hendricks
+superscript: 10,M,F
 category: Longdrinks
-subcategory: ""
+subcategory: Gin-Tonic
 description: ""
-price1: "8,5"
+price1: 9,0
 price2: ""
 price3: ""
 ---
