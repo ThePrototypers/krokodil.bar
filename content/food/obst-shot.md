@@ -2,7 +2,7 @@
 title: Pisco Puro Quebranta Pancho Fierro
 superscript: ""
 category: Schnaps & Likör
-subcategory: Obstbrantwein
+subcategory: Obstbranntwein
 description: ""
 price1: 2,8
 price2: 5,0

@@ -372,8 +372,8 @@ const handleSchnapsLikor = (foods) => {
       )}
 
       {handleSchnapsLikorPrices(
-        "Obstbrantwein",
-        foods.filter((f) => f.subcategory === "Obstbrantwein")
+        "Obstbranntwein",
+        foods.filter((f) => f.subcategory === "Obstbranntwein")
       )}
 
       {handleSchnapsLikorPrices(
@@ -571,30 +571,6 @@ const handleAperitif = (foods) => {
 const handleLongdrinks = (foods) => {
   return (
     <div>
-      {foods
-        .filter((food) => food.subcategory !== "Gin-Tonic")
-        .sort()
-        .map((food) => {
-          return (
-            <div key={food.title} className="grid grid-cols-4 mt-2">
-              <div className="col-span-3 font-yanone uppercase desktop:text-[30px] text-[19px]">
-                <div>
-                  {food.title}
-                  <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">
-                    {food.superscript}
-                  </sup>
-                </div>
-                <div className="-mt-[0.25em] font-medium uppercase leading-[1em] desktop:text-[20px] text-[16px] text-[#8B8B8B]">
-                  {food.description}
-                </div>
-              </div>
-              <div className="text-right font-light font-yanone desktop:text-[26px] text-[16px]">
-                {food.price1}
-              </div>
-            </div>
-          );
-        })}
-
       <div className="flex flex-col">
         <div className="grid grid-cols-4 mt-2">
           <div className="mt-6 mb-2 col-span-4 text-krokodil-yellow-dark uppercase font-yanone desktop:text-3xl text-lg">
@@ -621,6 +597,30 @@ const handleLongdrinks = (foods) => {
             })}
         </div>
       </div>
+
+      {foods
+        .filter((food) => food.subcategory !== "Gin-Tonic")
+        .sort()
+        .map((food) => {
+          return (
+            <div key={food.title} className="grid grid-cols-4 mt-2">
+              <div className="col-span-3 font-yanone uppercase desktop:text-[30px] text-[19px]">
+                <div>
+                  {food.title}
+                  <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">
+                    {food.superscript}
+                  </sup>
+                </div>
+                <div className="-mt-[0.25em] font-medium uppercase leading-[1em] desktop:text-[20px] text-[16px] text-[#8B8B8B]">
+                  {food.description}
+                </div>
+              </div>
+              <div className="text-right font-light font-yanone desktop:text-[26px] text-[16px]">
+                {food.price1}
+              </div>
+            </div>
+          );
+        })}
     </div>
   );
 };
