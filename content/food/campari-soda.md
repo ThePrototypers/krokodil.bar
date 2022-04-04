@@ -1,10 +1,10 @@
 ---
 title: Campari Soda
-superscript: ""
+superscript: M
 category: Aperitif
 subcategory: ""
 description: ""
-price1: "5,5"
+price1: 7,5
 price2: ""
 price3: ""
 ---
