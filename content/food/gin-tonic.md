@@ -1,5 +1,5 @@
 ---
-title: + Bricks
+title: Gin-Tonic (Bricks)
 superscript: 10,M,F
 category: Longdrinks
 subcategory: Gin-Tonic
