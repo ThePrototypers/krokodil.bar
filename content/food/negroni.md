@@ -1,10 +1,10 @@
 ---
 title: Negroni
-superscript: "M 10"
+superscript: 1, M
 category: Aperitif
 subcategory: ""
-description: East London Batch No. 2 Gin, Campari, Belsazar Rot
-price1: "9,0"
+description: ELLC London Dry Louder Gin, Belsazar Rot, Campari
+price1: 9,5
 price2: ""
 price3: ""
 ---
