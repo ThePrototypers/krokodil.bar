@@ -1,5 +1,5 @@
 ---
-title: "H: Schalenfrüchte (Mandel, Haselnuss, Walnuss, Cashew, Pecannuss, Paranuss, Pistazie, Macadamianuss und Queenslandnuss)"
+title: "G: enthält Sojabohnen od. Sojabohnenerzeugnisse"
 superscript: ""
 category: Zusatzstoffe
 subcategory: ""
