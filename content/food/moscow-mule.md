@@ -1,10 +1,11 @@
 ---
 title: Moscow Mule
-superscript: ""
+superscript: A,M
 category: Cocktails
-subcategory: ""
-description: "Greenmark Wodka, Limettensaft, Thomas Henry Spicy Ginger, Gurke"
-price1: "7,0"
+subcategory: Frisch & Prickelnd
+description: Green Mark Wodka, Limettensaft, Thomas Henry Spicy Ginger,
+  Angostura Bitters, Gurke
+price1: 7,5
 price2: ""
 price3: ""
 ---
