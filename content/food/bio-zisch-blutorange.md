@@ -1,7 +1,7 @@
 ---
 title: Bio Zisch - Blutorange
 superscript: ""
-category: Limo & Mate
+category: Limo, Mate & Wasser
 subcategory: ""
 description: ""
 price1: 3,0
