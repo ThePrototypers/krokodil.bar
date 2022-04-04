@@ -1,7 +1,7 @@
 ---
 title: "Spreequell - Classic 0,75l "
 superscript: ""
-category: Limo & Mate
+category: Limo, Mate & Wasser
 subcategory: ""
 description: ""
 price1: 4,5
