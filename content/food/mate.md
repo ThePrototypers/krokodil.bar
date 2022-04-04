@@ -1,7 +1,7 @@
 ---
 title: Fassbrause
 superscript: 1,A,J
-category: Limo & Mate
+category: Limo, Mate & Wasser
 subcategory: ""
 description: ""
 price1: 2,8
