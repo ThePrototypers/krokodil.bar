@@ -1,10 +1,10 @@
 ---
-title: Citadelle Dry Gin
-superscript: "3 10"
+title: +Citadelle
+superscript: 10,M,F
 category: Longdrinks
-subcategory: ""
+subcategory: Gin-Tonic
 description: ""
-price1: "7,9"
+price1: 8,5
 price2: ""
 price3: ""
 ---
