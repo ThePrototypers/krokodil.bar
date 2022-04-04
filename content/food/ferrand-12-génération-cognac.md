@@ -1,0 +1,7 @@
+---
+title: Ferrand 12. Génération Cognac
+category: Schnaps & Likör
+subcategory: Obstbrantwein
+price1: 5,5
+price2: 10,0
+---
