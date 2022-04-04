@@ -1,5 +1,5 @@
 ---
-title: Greemark
+title: Greenmark
 superscript: A
 category: Schnaps & Likör
 subcategory: Wodka & Korn
