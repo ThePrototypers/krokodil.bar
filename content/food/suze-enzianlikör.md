@@ -1,6 +1,6 @@
 ---
 title: Suze - Enzianlikör
-superscript: ""
+superscript: 1,M
 category: Schnaps & Likör
 subcategory: Wermut & Likör
 price1: --
