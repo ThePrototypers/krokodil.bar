@@ -1,7 +1,7 @@
 ---
 title: Bio Zisch - Mate
 superscript: "9"
-category: Limo & Mate
+category: Limo, Mate & Wasser
 subcategory: ""
 description: ""
 price1: 3,0
