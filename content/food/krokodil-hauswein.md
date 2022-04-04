@@ -1,10 +1,10 @@
 ---
-title: Krokodil Hauswein
+title: La Estrella tinto, Spain
 superscript: M
 category: Wein
 subcategory: Rotwein
 description: x
-price1: "3,6"
-price2: "8,2"
-price3: "16,0"
+price1: 4,0
+price2: 9,0
+price3: 17,0
 ---
