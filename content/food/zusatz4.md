@@ -1,10 +1,10 @@
 ---
-title: "4: Mit Süssungsmittel Saccharin"
+title: "11: Mit Süssungsmittel"
 superscript: ""
 category: Zusatzstoffe
 subcategory: ""
 description: ""
-price1: 40
+price1: "110"
 price2: ""
 price3: ""
 ---
