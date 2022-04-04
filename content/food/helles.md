@@ -6,5 +6,5 @@ subcategory: Fassbier
 price1: 3,2
 price2: 3,9
 price3: 13,0
-order: 1
+order: "3"
 ---
