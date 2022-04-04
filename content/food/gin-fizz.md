@@ -1,10 +1,10 @@
 ---
 title: Gin Fizz
-superscript: ""
+superscript: A,G
 category: Cocktails
 subcategory: ""
-description: "East London Dry Gin Batch No. 1, Zitronensaft, Rohrzuckersyrup, Aquafaba, Mineralwasser"
-price1: "8,5"
+description: ELLC London Dry Brighter Gin, Zitronensaft, Rohrzuckersirup, Aquafaba, Soda
+price1: 9,0
 price2: ""
 price3: ""
 ---
