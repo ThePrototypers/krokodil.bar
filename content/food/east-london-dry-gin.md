@@ -1,10 +1,10 @@
 ---
-title: East London Dry Gin
-superscript: "3 10"
+title: + Lind & Lime
+superscript: 10,M,F
 category: Longdrinks
-subcategory: ""
+subcategory: Gin-Tonic
 description: ""
-price1: "7,2"
+price1: 9,5
 price2: ""
 price3: ""
 ---
