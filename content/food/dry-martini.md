@@ -1,10 +1,10 @@
 ---
 title: Dry Martini
-superscript: ""
+superscript: M
 category: Cocktails
-subcategory: ""
-description: "East London Batch No. 2 Gin, Belsazar Dry"
-price1: "9,9"
+subcategory: Elegant & Trocken
+description: ELLC London Dry Louder Gin, Belsazar Dry
+price1: 11,0
 price2: ""
 price3: ""
 ---
