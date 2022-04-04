@@ -1,5 +1,5 @@
 ---
-title: "M: Lupinen"
+title: "M: enthält Schwefeldioxid / Sulfite"
 superscript: ""
 category: Zusatzstoffe
 subcategory: ""
