@@ -1,10 +1,10 @@
 ---
-title: Club Mate
-superscript: "A B"
-category: "Limo & Mate"
+title: Fassbrause
+superscript: 1,A,J
+category: Limo & Mate
 subcategory: ""
-description: "Beschreibung"
-price1: "2,5"
+description: ""
+price1: 2,8
 price2: ""
 price3: ""
 ---
