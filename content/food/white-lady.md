@@ -1,10 +1,10 @@
 ---
 title: White Lady
-superscript: ""
+superscript: A,G
 category: Cocktails
-subcategory: "Sauer & Cremig"
-description: "East London Batch No. 1 Gin, Ferrand Dry Curacao, Zitronensaft, Rohrzuckersyrup, Aquafaba"
-price1: "9,5"
+subcategory: Sauer & Cremig
+description: ELLC London Dry Brighter Gin, Zitronensaft, Ferrand Dry Curacao, Aquafaba, Soda
+price1: 9,5
 price2: ""
 price3: ""
 ---
