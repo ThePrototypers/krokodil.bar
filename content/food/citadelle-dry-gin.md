@@ -1,5 +1,5 @@
 ---
-title: +Citadelle
+title: + Citadelle
 superscript: 10,M,F
 category: Longdrinks
 subcategory: Gin-Tonic
