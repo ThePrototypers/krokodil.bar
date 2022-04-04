@@ -1,10 +1,10 @@
 ---
-title: Kaffee
-superscript: "A B"
-category: "Kaffee & Tee"
+title: Espresso
+superscript: "9"
+category: Kaffee & Tee
 subcategory: ""
-description: "Beschreibung"
-price1: "2,3"
+description: ""
+price1: 2,0
 price2: ""
 price3: ""
 ---
