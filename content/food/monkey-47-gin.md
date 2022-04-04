@@ -1,10 +1,10 @@
 ---
-title: Monkey 47 Gin
-superscript: "3 10"
+title: + Monkey 47
+superscript: 10,M,F
 category: Longdrinks
-subcategory: ""
+subcategory: Gin-Tonic
 description: ""
-price1: "9,0"
+price1: 11,0
 price2: ""
 price3: ""
 ---
