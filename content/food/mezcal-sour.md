@@ -1,10 +1,10 @@
 ---
 title: Mezcal Sour
-superscript: ""
+superscript: A,G
 category: Cocktails
-subcategory: ""
-description: "Gusano Rojo Mezcal, Zitronensaft, Rohrzuckersyrup, Aquafaba"
-price1: "8,9"
+subcategory: Sauer & Cremig
+description: BruXo X Mezcal Joven, Zitronensaft, Rohrzuckersirup, Aquafaba
+price1: 9,5
 price2: ""
 price3: ""
 ---
