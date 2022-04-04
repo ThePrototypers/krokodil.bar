@@ -4,7 +4,7 @@ superscript: M
 category: Wein
 subcategory: Schorlen
 description: x
-price1: "5,3"
-price2: "--"
-price3: "--"
+price1: 6,2
+price2: --
+price3: --
 ---
