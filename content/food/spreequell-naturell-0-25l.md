@@ -1,7 +1,7 @@
 ---
 title: "Spreequell - Naturell 0,25l "
 superscript: ""
-category: Limo & Mate
+category: Limo, Mate & Wasser
 subcategory: ""
 description: ""
 price1: 2,0
