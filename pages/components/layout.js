@@ -43,6 +43,10 @@ export default function Layout({ children }) {
 
       {showNav &&
         <>
+          <div className="max-w-full desktop:max-w-4xl wide:max-w-4xl mx-auto font-rubik">
+            {children}
+          </div>
+
           <div className="fixed bottom-12 right-12 flex-col hidden desktop:flex">
             <div><a href="https://www.facebook.com/zumkrokodil/"><Image src={fb} alt="Krokodil Bar auf Facebook"></Image></a></div>
             <div><a href="https://www.instagram.com/zum_krokodil/"><Image src={ig} alt="Krokodil Bar auf Instagram"></Image></a></div>
@@ -51,10 +55,6 @@ export default function Layout({ children }) {
 
           <div className="hidden fixed desktop:block desktop:top-[17px] desktop:left-[17px] wide:top-[50px] wide:left-[70px]">
             <Link href="/"><a><Image src={logo} alt="Krokodil Bar Logo"></Image></a></Link>
-          </div>
-
-          <div className="max-w-full desktop:max-w-4xl wide:max-w-4xl mx-auto font-rubik">
-            {children}
           </div>
         </>
       }
