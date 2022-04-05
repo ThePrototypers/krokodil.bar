@@ -2,7 +2,7 @@
 title: Online Reservierung// Online Reservations!
 date: 2022-04-05T10:50:38.755Z
 ---
-\*englisch below\*
+\*english below\*
 
 Liebe Leute,
 
