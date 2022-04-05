@@ -2,7 +2,7 @@
 title: Online Reservierung// Online Reservations!
 date: 2022-04-05T10:50:38.755Z
 ---
-englisch below//
+\*englisch below\*
 
 Liebe Leute,
 
@@ -15,8 +15,6 @@ Liebe Grüße,
 Eure Kroko
 
 ![](img/kroko_raucherraum1.jpg)
-
-//engl.
 
 Dear people,
 
