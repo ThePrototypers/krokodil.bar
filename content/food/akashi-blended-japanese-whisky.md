@@ -5,5 +5,5 @@ category: Schnaps & Likör
 subcategory: Whisky
 price1: 4,5
 price2: 8,5
-order: 1
+order: "2"
 ---
