@@ -1,5 +1,5 @@
 ---
-title: Jose Cuervo Especial Joven
+title: José Cuervo Especial Joven
 superscript: M,F,C
 category: Schnaps & Likör
 subcategory: Mezcal & Tequila
