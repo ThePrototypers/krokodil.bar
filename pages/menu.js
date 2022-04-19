@@ -264,9 +264,6 @@ const handleBottleBeerPrices = (title, beers) => {
       <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
         <div>0,5L</div>
       </div>
-      <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
-        <div>Pitcher</div>
-      </div>
 
       {beers.sort(compareOrder).map((w) => {
         return (
