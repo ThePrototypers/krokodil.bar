@@ -1,5 +1,5 @@
 ---
-title: Somersby Cider 0,33l
+title: Somersby Cider
 superscript: M
 category: Bier
 subcategory: Flaschenbier

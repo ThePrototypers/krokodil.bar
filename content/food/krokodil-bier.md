@@ -1,5 +1,5 @@
 ---
-title: Jever 0,33l
+title: Jever
 superscript: A
 category: Bier
 subcategory: Flaschenbier

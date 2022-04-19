@@ -1,5 +1,5 @@
 ---
-title: Lammsbräu Alkoholfrei 0,33l
+title: Lammsbräu Alkoholfrei
 superscript: A
 category: Bier
 subcategory: Flaschenbier

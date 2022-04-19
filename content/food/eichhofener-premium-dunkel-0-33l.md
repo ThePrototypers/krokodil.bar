@@ -1,5 +1,5 @@
 ---
-title: Eichhofener Premium Dunkel 0,33l
+title: Eichhofener Premium Dunkel
 superscript: A
 category: Bier
 subcategory: Flaschenbier

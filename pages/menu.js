@@ -203,7 +203,7 @@ const handleBeer = (foods) => {
         foods.filter((f) => f.subcategory === "Fassbier")
       )}
 
-      {handleBeerPrices(
+      {handleBottleBeerPrices(
         "Flaschenbier",
         foods.filter((f) => f.subcategory === "Flaschenbier")
       )}
@@ -222,6 +222,47 @@ const handleBeerPrices = (title, beers) => {
       </div>
       <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
         <div>0,4L</div>
+      </div>
+      <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+        <div>Pitcher</div>
+      </div>
+
+      {beers.sort(compareOrder).map((w) => {
+        return (
+          <React.Fragment key={w.title}>
+            <div className="col-span-2 leading-[1.35em] font-medium font-yanone uppercase desktop:text-[30px] text-[19px]">
+              {w.title}
+              <sup className="ml-1 font-medium uppercase desktop:text-[20px] text-[16px] text-[#8B8B8B]">
+                {w.superscript}
+              </sup>
+            </div>
+            <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
+              {w.price1}
+            </div>
+            <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
+              {w.price2}
+            </div>
+            <div className="text-right font-yanone font-light desktop:text-[26px] text-[16px]">
+              {w.price3}
+            </div>
+          </React.Fragment>
+        );
+      })}
+    </div>
+  );
+};
+
+const handleBottleBeerPrices = (title, beers) => {
+  return (
+    <div className="mt-6 grid grid-cols-5 space-y-4">
+      <div className="mt-6 col-span-2 text-krokodil-yellow-dark uppercase font-yanone desktop:text-3xl text-lg">
+        {title}
+      </div>
+      <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+        <div>0,33L</div>
+      </div>
+      <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
+        <div>0,5L</div>
       </div>
       <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
         <div>Pitcher</div>

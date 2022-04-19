@@ -1,8 +1,8 @@
 ---
-title: Maisel's Hefeweizen Alkoholfrei 0,5l
+title: Maisel's Hefeweizen Alkoholfrei
 superscript: A
 category: Bier
 subcategory: Flaschenbier
-price1: 4,0
+price2: 4,0
 order: 1
 ---
