@@ -1,5 +1,5 @@
 ---
-title: Bricks - Organic Dry Gin
+title: Brick - Organic Dry Gin
 category: Schnaps & Likör
 subcategory: Gin
 price1: 2,5
