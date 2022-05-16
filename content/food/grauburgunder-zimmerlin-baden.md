@@ -1,5 +1,5 @@
 ---
-title: Grauburgunder, Zimmerlin, Baden
+title: Grauburgunder, Jülg, Pfalz
 superscript: M
 category: Wein
 subcategory: Weisswein
