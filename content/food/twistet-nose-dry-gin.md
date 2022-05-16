@@ -1,5 +1,5 @@
 ---
-title: Twistet Nose - Dry Gin
+title: Twisted Nose - Dry Gin
 category: Schnaps & Likör
 subcategory: Gin
 price1: 3,8
