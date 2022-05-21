@@ -337,7 +337,7 @@ const handleWinePrices = (title, wines) => {
       </div>
       <div className="text-krokodil-yellow-dark leading-[1em] uppercase text-right font-semibold font-yanone desktop:text-[20px] text-[18px]">
         <div>Flasche</div>
-        <div>0,7L</div>
+        <div></div>
       </div>
 
       {wines.sort(compareOrder).map((w) => {
