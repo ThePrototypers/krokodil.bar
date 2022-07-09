@@ -53,6 +53,7 @@ function compare(a, b) {
   return 0;
 }
 
+// define menu
 export default function Menu({ foodsByCategories }) {
   return (
     <Layout>
