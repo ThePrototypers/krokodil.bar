@@ -4,8 +4,8 @@ superscript: A
 category: Bier
 subcategory: Fassbier
 description: null
-price1: 3,0
-price2: 3,6
-price3: 12,0
+price1: 3,5
+price2: 4,8
+price3: 15,0
 order: "10"
 ---
