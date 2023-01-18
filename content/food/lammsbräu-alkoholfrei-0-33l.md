@@ -3,6 +3,6 @@ title: Lammsbräu Alkoholfrei
 superscript: A
 category: Bier
 subcategory: Flaschenbier
-price1: 3,8
+price1: 4,3
 order: 1
 ---
