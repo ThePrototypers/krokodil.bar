@@ -4,7 +4,7 @@ superscript: M,F
 category: Aperitif
 subcategory: Spritz
 description: ""
-price1: 6,5
+price1: 6,9
 price2: ""
 price3: ""
 order: 1
