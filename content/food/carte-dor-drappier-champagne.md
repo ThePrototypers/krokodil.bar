@@ -6,6 +6,6 @@ subcategory: Schaumwein
 description: null
 price1: --
 price2: --
-price3: 70,0
+price3: 80,0 (0,75l)
 order: 1
 ---
