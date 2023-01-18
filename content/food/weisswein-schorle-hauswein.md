@@ -1,10 +1,10 @@
 ---
-title: Weißwein-Schorle (La Estrella blanco)
+title: Weisswein-Schorle (La Estrella blanco)
 superscript: M
 category: Wein
 subcategory: Schorlen
 description: x
-price1: 3,8
+price1: 4,2
 price2: --
 price3: --
 order: "3"
