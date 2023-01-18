@@ -1,10 +1,10 @@
 ---
-title: Hefeweizen
+title: Hefeweizen (0,5l)
 superscript: A
 category: Bier
 subcategory: Fassbier
-price1: 3,4
-price2: 5,0
+price1: --
+price2: 6,0
 price3: --
 order: "4"
 ---
