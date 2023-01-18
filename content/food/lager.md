@@ -1,10 +1,10 @@
 ---
-title: Lager
+title: Leff
 superscript: A
 category: Bier
 subcategory: Fassbier
-price1: 4,4
-price2: 6,8
-price3: 18,5
+price1: 4,9
+price2: --
+price3: --
 order: "5"
 ---
