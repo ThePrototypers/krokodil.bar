@@ -1,6 +1,6 @@
 ---
 title: Gin Soda
 category: Longdrinks
-price1: 7,5
+price1: 8,5
 order: "3"
 ---
