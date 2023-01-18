@@ -4,7 +4,7 @@ superscript: ""
 category: Cocktails
 subcategory: Frisch & Prickelnd
 description: BruXo X Mezcal Joven, Graipfruitsaft, Agavensirup, Soda
-price1: 9,0
+price1: 9,5
 price2: ""
 price3: ""
 order: 1
