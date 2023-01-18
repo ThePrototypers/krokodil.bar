@@ -3,6 +3,6 @@ title: Boulevardier
 superscript: 1, M
 category: Aperitif
 description: Buffalo Trace Straight Bourbon, Belsazar Rot, Campari
-price1: 9,5
+price1: 11,0
 order: "8"
 ---
