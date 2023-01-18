@@ -4,7 +4,7 @@ superscript: M
 category: Wein
 subcategory: Schaumwein
 description: 0.2L
-price1: 6,0
+price1: 6,0 (0,2l)
 price2: --
 price3: --
 order: 1
