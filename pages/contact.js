@@ -21,7 +21,7 @@ export default function Impressions() {
             </h3>
             <div className="mt-5 font-rubik font-medium text-[20px]">
               <div>Weserstrasse 19, 12045 Berlin</div>
-              <div>Tel: 030-38720706</div>
+              <a href="tel:03039720706">Tel: 030 - 39720706</a>
               <div>
                 <a href="mailto:schnapp@krokodil.bar">schnapp@krokodil.bar</a>
               </div>
