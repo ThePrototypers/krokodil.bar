@@ -1,5 +1,5 @@
 ---
-title: Leff
+title: Leffe
 superscript: A
 category: Bier
 subcategory: Fassbier
