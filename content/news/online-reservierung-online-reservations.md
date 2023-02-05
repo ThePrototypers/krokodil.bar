@@ -12,7 +12,7 @@ Hier ist der [Link](https://app.resmio.com/zum-krokodil/widget). Diesen könnt i
 
 Liebe Grüße,
 
-Eure Kroko
+Euer Kroko
 
 ![](img/kroko_raucherraum1.jpg)
 
