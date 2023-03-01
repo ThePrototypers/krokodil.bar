@@ -1,5 +1,5 @@
 ---
-title: Italicus - Rolio di Bergamotto
+title: Italicus - Rosolio di Bergamotto
 superscript: "1"
 category: Schnaps & Likör
 subcategory: Wermut & Likör
