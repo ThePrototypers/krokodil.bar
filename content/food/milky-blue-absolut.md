@@ -1,5 +1,5 @@
 ---
-title: Pur Ehr Supreme
+title: Pur Erh Supreme
 superscript: "9"
 category: Kaffee & Tee
 subcategory: ""
