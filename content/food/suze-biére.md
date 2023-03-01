@@ -1,5 +1,5 @@
 ---
-title: Suze Biére
+title: Suze Pale Ale
 superscript: 1,A
 category: Bier
 subcategory: Fassbier
