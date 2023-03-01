@@ -3,7 +3,7 @@ title: Negroni
 superscript: 1, M
 category: Aperitif
 subcategory: ""
-description: ELLC London Dry Louder Gin, Belsazar Rot, Campari
+description: Twisted Nose Gin, Belsazar Rot, Campari
 price1: 11,0
 price2: ""
 price3: ""
