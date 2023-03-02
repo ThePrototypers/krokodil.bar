@@ -8,7 +8,7 @@ Liebe Leute,
 
 ab heute könnt ihr endlich auch online reservieren! Bitte gebt dafür an, ob ihr im Raucherraum, nicht-Raucherbereich  – oder sobald unser Außenbereich aufmacht – draußen reservieren wollt. 
 
-Hier ist der [Link](https://app.resmio.com/zum-krokodil/widget). Diesen könnt ihr auch immer auf der Seite unter "Kontakt" finden.
+Hier ist der **[Link](https://app.resmio.com/zum-krokodil/widget)**. Diesen könnt ihr auch immer auf der Seite unter "Kontakt" finden.
 
 Liebe Grüße,
 
