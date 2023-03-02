@@ -7,5 +7,5 @@ description: ""
 price1: 10,0
 price2: ""
 price3: ""
-order: 1
+order: "3"
 ---
