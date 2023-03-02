@@ -20,7 +20,7 @@ Dear people,
 
 as of today you can finally book online! Please note whether you want to book in the smoking room, non-smoking area - or as soon as our outdoor area opens - outside. 
 
-Here is the [link](https://app.resmio.com/zum-krokodil/widget). You can also always find it on our website under "Kontakt".
+Here is the **[link](https://app.resmio.com/zum-krokodil/widget)**. You can also always find it on our website under "Kontakt".
 
 Kind regards,
 
