@@ -1,10 +1,10 @@
 ---
-title: Pale Ale
+title: Drunken Sailor IPA
 superscript: A
 category: Bier
 subcategory: Fassbier
-price1: 4,9
+price1: 5,1
 price2: "-"
-price3: 20,5
+price3: "21"
 order: "7"
 ---
