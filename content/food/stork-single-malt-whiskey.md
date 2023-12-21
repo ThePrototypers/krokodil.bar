@@ -1,5 +1,5 @@
 ---
-title: Stork - Straight Rye
+title: Horse with no name - Bourbon
 superscript: A
 category: Schnaps & Likör
 subcategory: Whisky
